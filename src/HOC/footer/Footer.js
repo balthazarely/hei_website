@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
 const Footer = () => {
     const classes = useStyles();
     return (
-        <footer className="bck_black" style={{ padding: "50px", height: "250px" }}>
+        <footer className="bck_black" style={{ padding: "50px", height: "150px" }}>
             <Grid container spacing={4}>
                 <Grid item xs={12} sm={6} md={6}>
                     <div className="font_righteous footer_logo" style={{ color: "#dddddd", fontSize: "20px" }}>Hartman Ely Investments</div>
@@ -43,7 +43,6 @@ const Footer = () => {
                 </Grid>
 
             </Grid>
-
         </footer>
     )
 }

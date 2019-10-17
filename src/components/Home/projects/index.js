@@ -1,6 +1,7 @@
 import React from 'react';
 import Fade from "react-reveal/Fade";
 import MyButton from '../../UI/MyButton'
+import { Link } from 'react-router-dom';
 
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
@@ -12,7 +13,19 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Link from '@material-ui/core/Link';
+// import Link from '@material-ui/core/Link';
+
+
+import Fruitdale from '../../../resources/imgs/fruitdale.jpg'
+import Hanger2 from '../../../resources/imgs/hanger2.jpg'
+import Innovage from '../../../resources/imgs/innovage.jpg'
+import Pancratia from '../../../resources/imgs/Pancratia.jpg'
+import SteamPlantRow from '../../../resources/imgs/Steam_Plant_Row.jpg'
+import SteamPlant from '../../../resources/imgs/Steamplant.jpg'
+import Eiber from '../../../resources//imgs/eiber_village.jpg'
+
+
+
 
 
 const useStyles = makeStyles(theme => ({
@@ -45,7 +58,7 @@ const useStyles = makeStyles(theme => ({
     typographyHeader: {
         fontSize: "18px",
         textAlign: "left",
-        fontWeight: '800'
+        fontWeight: '800',
     },
     typographyBody: {
         align: "center",
@@ -80,113 +93,137 @@ export default function Projects() {
                         <Container className={classes.cardGrid} maxWidth="md">
                             <Grid container spacing={4}>
 
-                            
-                            <Grid item xs={12} sm={4} md={4}>
-                                <Fade bottom delay={300}>
-                                        <CardMedia
-                                            className={classes.cardMedia}
-                                            image="https://source.unsplash.com/random"
-                                            title="Image title"
-                                        />
-                                    <CardContent>
-                                        <Typography className={classes.typographyHeader} gutterBottom>
-                                            Redevelopmen
-                                        </Typography>
-                                        <Typography className={classes.typographyBody} gutterBottom>
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
-                                        </Typography>
-                                    </CardContent>
-                                </Fade>
-                            </Grid>
-                            <Grid item xs={12} sm={4} md={4}>
-                                <Fade bottom delay={300}>
-                                        <CardMedia
-                                            className={classes.cardMedia}
-                                            image="https://source.unsplash.com/random"
-                                            title="Image title"
-                                        />
-                                    <CardContent>
-                                        <Typography className={classes.typographyHeader} gutterBottom>
-                                            Redevelopmen
-                                        </Typography>
-                                        <Typography className={classes.typographyBody} gutterBottom>
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
-                                        </Typography>
-                                    </CardContent>
-                                </Fade>
-                            </Grid>
-                            <Grid item xs={12} sm={4} md={4}>
-                                <Fade bottom delay={300}>
-                                        <CardMedia
-                                            className={classes.cardMedia}
-                                            image="https://source.unsplash.com/random"
-                                            title="Image title"
-                                        />
-                                    <CardContent>
-                                        <Typography className={classes.typographyHeader} gutterBottom>
-                                            Redevelopmen
-                                        </Typography>
-                                        <Typography className={classes.typographyBody} gutterBottom>
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
-                                        </Typography>
-                                    </CardContent>
-                                </Fade>
-                            </Grid>
 
-                            <Grid item xs={12} sm={4} md={4}>
-                                <Fade bottom delay={300}>
+                                <Grid item xs={12} sm={4} md={4}>
+                                    <Fade bottom delay={300}>
                                         <CardMedia
                                             className={classes.cardMedia}
-                                            image="https://source.unsplash.com/random"
+                                            image={Fruitdale}
                                             title="Image title"
                                         />
-                                    <CardContent>
-                                        <Typography className={classes.typographyHeader} gutterBottom>
-                                            Redevelopmen
+                                        <CardContent>
+                                            <Typography className={classes.typographyHeader} gutterBottom>
+                                                <Link style={{
+                                                    textDecoration: "none",
+                                                    color: "black"
+                                                }}
+                                                    to="/fruitdale">Fruitdale School Lofts</Link>
+                                            </Typography>
+                                            <Typography className={classes.typographyBody} gutterBottom>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
                                         </Typography>
-                                        <Typography className={classes.typographyBody} gutterBottom>
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
-                                        </Typography>
-                                    </CardContent>
-                                </Fade>
-                            </Grid>
-                            <Grid item xs={12} sm={4} md={4}>
-                                <Fade bottom delay={300}>
+                                        </CardContent>
+                                    </Fade>
+                                </Grid>
+                                <Grid item xs={12} sm={4} md={4}>
+                                    <Fade bottom delay={300}>
                                         <CardMedia
                                             className={classes.cardMedia}
-                                            image="https://source.unsplash.com/random"
+                                            image={Pancratia}
                                             title="Image title"
                                         />
-                                    <CardContent>
-                                        <Typography className={classes.typographyHeader} gutterBottom>
-                                            Redevelopmen
+                                        <CardContent>
+                                            <Typography className={classes.typographyHeader} gutterBottom>
+                                                <Link style={{
+                                                    textDecoration: "none",
+                                                    color: "black"
+                                                }}
+                                                    to="/projectone">Pancratia Hall Lofts</Link>
+                                            </Typography>
+                                            <Typography className={classes.typographyBody} gutterBottom>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
                                         </Typography>
-                                        <Typography className={classes.typographyBody} gutterBottom>
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
-                                        </Typography>
-                                    </CardContent>
-                                </Fade>
-                            </Grid>
-                            <Grid item xs={12} sm={4} md={4}>
-                                <Fade bottom delay={300}>
+                                        </CardContent>
+                                    </Fade>
+                                </Grid>
+                                <Grid item xs={12} sm={4} md={4}>
+                                    <Fade bottom delay={300}>
                                         <CardMedia
                                             className={classes.cardMedia}
-                                            image="https://source.unsplash.com/random"
+                                            image={Eiber}
                                             title="Image title"
                                         />
-                                    <CardContent>
-                                        <Typography className={classes.typographyHeader} gutterBottom>
-                                            Redevelopmen
+                                        <CardContent>
+                                            <Typography className={classes.typographyHeader} gutterBottom>
+                                                <Link style={{
+                                                    textDecoration: "none",
+                                                    color: "black"
+                                                }}
+                                                    to="/projectone"> Eiber Village</Link>
+                                            </Typography>
+                                            <Typography className={classes.typographyBody} gutterBottom>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
                                         </Typography>
-                                        <Typography className={classes.typographyBody} gutterBottom>
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
+                                        </CardContent>
+                                    </Fade>
+                                </Grid>
+
+                                <Grid item xs={12} sm={4} md={4}>
+                                    <Fade bottom delay={300}>
+                                        <CardMedia
+                                            className={classes.cardMedia}
+                                            image={Hanger2}
+                                            title="Image title"
+                                        />
+                                        <CardContent>
+                                            <Typography className={classes.typographyHeader} gutterBottom>
+                                                <Link style={{
+                                                    textDecoration: "none",
+                                                    color: "black"
+                                                }}
+                                                    to="/projectone">  Hangar 2 Lowry  </Link>
+                                            </Typography>
+                                            <Typography className={classes.typographyBody} gutterBottom>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
                                         </Typography>
-                                    </CardContent>
-                                </Fade>
-                            </Grid>
-                                
-                                
-                                
+                                        </CardContent>
+                                    </Fade>
+                                </Grid>
+                                <Grid item xs={12} sm={4} md={4}>
+                                    <Fade bottom delay={300}>
+                                        <CardMedia
+                                            className={classes.cardMedia}
+                                            image={SteamPlant}
+                                            title="Image title"
+                                        />
+                                        <CardContent>
+                                            <Typography className={classes.typographyHeader} gutterBottom>
+                                                <Link style={{
+                                                    textDecoration: "none",
+                                                    color: "black"
+                                                }}
+                                                    to="/projectone">Steam Plant Lofts  </Link>
+                                            </Typography>
+                                            <Typography className={classes.typographyBody} gutterBottom>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
+                                        </Typography>
+                                        </CardContent>
+                                    </Fade>
+                                </Grid>
+                                <Grid item xs={12} sm={4} md={4}>
+                                    <Fade bottom delay={300}>
+                                        <CardMedia
+                                            className={classes.cardMedia}
+                                            image={SteamPlantRow}
+                                            title="Image title"
+                                        />
+                                        <CardContent>
+                                            <Typography className={classes.typographyHeader} gutterBottom>
+                                                <Link style={{
+                                                    textDecoration: "none",
+                                                    color: "black"
+                                                }}
+                                                    to="/projectone"> Steam Plant Row Home</Link>
+                                            </Typography>
+                                            <Typography className={classes.typographyBody} gutterBottom>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
+                                        </Typography>
+                                        </CardContent>
+                                    </Fade>
+                                </Grid>
+
+
+
 
 
                             </Grid>
@@ -194,7 +231,7 @@ export default function Projects() {
                     </Container>
                 </div>
             </main>
-        </React.Fragment>
+        </React.Fragment >
     );
 }
 

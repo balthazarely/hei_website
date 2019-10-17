@@ -2,6 +2,12 @@ import React from 'react';
 import Fade from "react-reveal/Fade";
 import MyButton from '../../UI/MyButton'
 
+
+import Steamplant from '../../../resources/imgs/Steamplant.jpg'
+import Hanger from '../../../resources/imgs/hanger2.3.jpg'
+import Innovage from '../../../resources/imgs/innovage.jpg'
+
+
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -42,47 +48,50 @@ const useStyles = makeStyles(theme => ({
         flexGrow: 1,
         marginTop: '-20px'
     },
+    typographyHeader: {
+        fontSize: "18px",
+        align: "center"
+    },
+    typographyBody: {
+        align: "center",
+        fontSize: "16px"
+    },
     footer: {
         backgroundColor: theme.palette.background.paper,
         padding: theme.spacing(6),
+
     },
 }));
 
 
 
-const Infomation = () => {
+export default function Album() {
     const classes = useStyles();
 
     return (
+        <React.Fragment>
+            <CssBaseline />
+
+            <main>
+
+                <div className={classes.heroContent}>
+                    <Container maxWidth="md">
+                        <Fade top delay={500}>
+                            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
+                                Fruitdale
+
+                            </Typography>
+                            <Typography variant="h5" align="center" color="textSecondary" paragraph>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore atque ducimus nemo ullam,
+                                 eum distinctio quos saepe totam facere obcaecati, corrupti, nihil itaque earum?
+                        </Typography>
+                        </Fade>
+                    </Container>
+                </div>
+
+            </main>
 
 
-        <Container maxWidth="md">
-            <Fade top delay={500} >
-                <Typography component="h1" variant="h2" color="white" align="center" className="" gutterBottom>
-                    <div style={{
-                        color: 'white',
-
-                        fontSize: "28px",
-                        // textTransform: "uppercase",
-                        fontWeight: "800",
-                        // letterSpacing: "2px",
-                        textShadow: "2px 2px 3px rgba(0,0,0,0.58)"
-
-                    }}>Please contact us with any further questions or proposals</div>
-                </Typography>
-            </Fade>
-            <Fade bottom delay={900} >
-                <MyButton
-                    text="Email Us"
-                    bck="#ffa800"
-                    color="white" />
-            </Fade>
-        </Container >
-
-
-
+        </React.Fragment>
     );
 }
-
-export default Infomation;
-

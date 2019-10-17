@@ -2,6 +2,12 @@ import React from 'react';
 import Fade from "react-reveal/Fade";
 import MyButton from '../../UI/MyButton'
 
+
+import Steamplant from '../../../resources/imgs/Steamplant.jpg'
+import Hanger from '../../../resources/imgs/hanger2.3.jpg'
+import Innovage from '../../../resources/imgs/innovage.jpg'
+
+
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -74,7 +80,7 @@ export default function Album() {
                     <Container maxWidth="md">
                         <Fade top delay={500}>
                             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-                                Get The Concerts <b>You Love</b>
+                                Sustainability in Design
 
                             </Typography>
                             <Typography variant="h5" align="center" color="textSecondary" paragraph>
@@ -92,7 +98,8 @@ export default function Album() {
                                     <Fade right delay={300}>
                                         <CardMedia
                                             className={classes.cardMedia}
-                                            image="https://source.unsplash.com/random"
+                                            image={Steamplant}
+                                            overflow="hidden"
                                             title="Image title"
                                         />
                                         <CardContent className={classes.typographyHeader}>
@@ -110,7 +117,8 @@ export default function Album() {
                                     <Fade right delay={300}>
                                         <CardMedia
                                             className={classes.cardMedia}
-                                            image="https://source.unsplash.com/random"
+                                            image={Hanger}
+                                            overflow="hidden"
                                             title="Image title"
                                         />
                                         <CardContent className={classes.typographyHeader}>
@@ -128,7 +136,8 @@ export default function Album() {
                                     <Fade right delay={300}>
                                         <CardMedia
                                             className={classes.cardMedia}
-                                            image="https://source.unsplash.com/random"
+                                            image={Innovage}
+                                            overflow="hidden"
                                             title="Image title"
                                         />
                                         <CardContent className={classes.typographyHeader}>

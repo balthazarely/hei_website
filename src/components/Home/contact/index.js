@@ -18,7 +18,7 @@ const Contact = () => {
                 // transitionDuration="600"
                 transitionTimingFunction="ease-in-out"
                 imageSrc={Fruitdale}>
-                {/* <Infomation /> */}
+                <Infomation />
                 {/* https://cdn.pixabay.com/photo/2018/05/10/11/34/concert-3387324_1280.jpg */}
             </LazyHero>
 

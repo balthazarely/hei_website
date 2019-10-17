@@ -62,8 +62,13 @@ const Headline = () => {
                     <div style={{
                         color: 'white',
                         textShadow: '2px 2px #000000',
-                        fontSize: "70px"
-                    }}>Find Your Ideal Night</div>
+                        fontSize: "56px",
+                        textTransform: "uppercase",
+                        fontWeight: "800",
+                        letterSpacing: "2px",
+                        textShadow: "2px 2px 3px rgba(0,0,0,0.58)"
+
+                    }}>Creating Sustainable Commmunities</div>
                 </Typography>
             </Fade>
             <Fade bottom delay={900} >

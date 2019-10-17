@@ -152,18 +152,15 @@ class ResAppBar extends Component {
                                 <ListItemIcon><EcoIcon className={classes.icon} /> </ListItemIcon>
                                 <ListItemText className={classes.listItem}>Mission</ListItemText>
                             </ListItem>
-
-                            <ListItem button style={{ color: 'white' }} onClick={() => scrollToElement('portfolio')}>
-                                <ListItemIcon><BusinessIcon className={classes.icon} /> </ListItemIcon>
-                                <ListItemText className={classes.listItem}>Portfolio</ListItemText>
-                            </ListItem>
-
                             <ListItem button style={{ color: 'white' }} onClick={() => scrollToElement('about')}>
                                 <ListItemIcon><GroupIcon className={classes.icon} /> </ListItemIcon>
                                 <ListItemText className={classes.listItem}>About</ListItemText>
                             </ListItem>
-
-                            <ListItem button style={{ color: 'white' }} onClick={() => scrollToElement('contact')}>
+                            <ListItem button style={{ color: 'white' }} onClick={() => scrollToElement('about')}>
+                                <ListItemIcon><BusinessIcon className={classes.icon} /> </ListItemIcon>
+                                <ListItemText className={classes.listItem}>Portfolio</ListItemText>
+                            </ListItem>
+                            <ListItem button style={{ color: 'white' }} onClick={() => scrollToElement('about')}>
                                 <ListItemIcon><Phone className={classes.icon} /> </ListItemIcon>
                                 <ListItemText className={classes.listItem}>Contact</ListItemText>
                             </ListItem>
@@ -210,9 +207,9 @@ class ResAppBar extends Component {
                         <Button variant="subheading" className={classes.padding}
                             color="inherit" onClick={() => scrollToElement('mission')} >Mission</Button>
                         <Button variant="subheading" className={classes.padding}
-                            color="inherit" onClick={() => scrollToElement('portfolio')} >Portfolio</Button>
+                            color="inherit" onClick={() => scrollToElement('about')} >About</Button>
                         <Button variant="subheading" className={classes.padding}
-                            color="inherit" onClick={() => scrollToElement('About')} >About</Button>
+                            color="inherit" onClick={() => scrollToElement('portfolio')} >Portfolio</Button>
                         <Button variant="subheading" className={classes.padding}
                             color="inherit" onClick={() => scrollToElement('contact')}  >Contact</Button>
                     </ButtonGroup>

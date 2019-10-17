@@ -17,17 +17,16 @@ function Routes() {
   return (
     <div className="App" tyle={{ height: "", background: '' }} >
       {/* <Header /> */}
-      <ResAppBar />
-
-      <Element name="home">
+      {/* <ResAppBar /> */}
+      <Element name="">
         <Featured />
       </Element>
 
-      <Element name="about">
+      <Element name="mission">
         <Next />
       </Element>
 
-      <Element name="highlights">
+      <Element name="about">
         <Team />
       </Element>
 
@@ -39,7 +38,7 @@ function Routes() {
         <Contact />
       </Element>
 
-      <Footer />
+      {/* <Footer /> */}
 
     </div>
   );

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import SideDrawer from './SideDrawer';
 import Logo from '../../resources/logos/HEI_logo.png'
+import { Link } from 'react-router-dom';
 
 
 import AppBar from '@material-ui/core/AppBar';
@@ -54,12 +55,15 @@ export default class Header extends Component {
 
                 <Toolbar>
                     <div className="header_logo">
-                        <img
-                            className="logo"
-                            style={{
-                                width: this.state.showMenu ? "300px" : '200px',
-                            }}
-                            src={`${Logo}`} />
+                        <Link to='/'>
+                            <img
+                                className="logo"
+                                style={{
+                                    width: this.state.showMenu ? "300px" : '200px',
+                                }}
+                                src={`${Logo}`}
+                            />
+                        </Link>
                     </div>
 
                     <IconButton
