@@ -12,7 +12,8 @@ const Featured = () => {
                 height: `${window.innerHeight}px`
             }}
                 isFixed="true"
-                opacity="0"
+                opacity=".2"
+                color="#2d2d2d"
                 parallaxOffset="100"
                 transitionDuration="600"
                 transitionTimingFunction="ease-in-out"

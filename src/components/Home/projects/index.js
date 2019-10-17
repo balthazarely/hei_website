@@ -80,111 +80,113 @@ export default function Projects() {
                         <Container className={classes.cardGrid} maxWidth="md">
                             <Grid container spacing={4}>
 
+                            
+                            <Grid item xs={12} sm={4} md={4}>
+                                <Fade bottom delay={300}>
+                                        <CardMedia
+                                            className={classes.cardMedia}
+                                            image="https://source.unsplash.com/random"
+                                            title="Image title"
+                                        />
+                                    <CardContent>
+                                        <Typography className={classes.typographyHeader} gutterBottom>
+                                            Redevelopmen
+                                        </Typography>
+                                        <Typography className={classes.typographyBody} gutterBottom>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
+                                        </Typography>
+                                    </CardContent>
+                                </Fade>
+                            </Grid>
+                            <Grid item xs={12} sm={4} md={4}>
+                                <Fade bottom delay={300}>
+                                        <CardMedia
+                                            className={classes.cardMedia}
+                                            image="https://source.unsplash.com/random"
+                                            title="Image title"
+                                        />
+                                    <CardContent>
+                                        <Typography className={classes.typographyHeader} gutterBottom>
+                                            Redevelopmen
+                                        </Typography>
+                                        <Typography className={classes.typographyBody} gutterBottom>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
+                                        </Typography>
+                                    </CardContent>
+                                </Fade>
+                            </Grid>
+                            <Grid item xs={12} sm={4} md={4}>
+                                <Fade bottom delay={300}>
+                                        <CardMedia
+                                            className={classes.cardMedia}
+                                            image="https://source.unsplash.com/random"
+                                            title="Image title"
+                                        />
+                                    <CardContent>
+                                        <Typography className={classes.typographyHeader} gutterBottom>
+                                            Redevelopmen
+                                        </Typography>
+                                        <Typography className={classes.typographyBody} gutterBottom>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
+                                        </Typography>
+                                    </CardContent>
+                                </Fade>
+                            </Grid>
 
-
-                                <Grid item xs={12} sm={4} md={4}>
-                                    <Fade right delay={300}>
+                            <Grid item xs={12} sm={4} md={4}>
+                                <Fade bottom delay={300}>
                                         <CardMedia
                                             className={classes.cardMedia}
                                             image="https://source.unsplash.com/random"
                                             title="Image title"
                                         />
-                                        <CardContent>
-                                            <Typography className={classes.typographyHeader} gutterBottom>
-                                                Redevelopmen
-                                            </Typography>
-                                            <Typography className={classes.typographyBody} gutterBottom>
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
-                                            </Typography>
-                                        </CardContent>
-                                    </Fade>
-                                </Grid>
-                                <Grid item xs={12} sm={4} md={4}>
-                                    <Fade right delay={300}>
+                                    <CardContent>
+                                        <Typography className={classes.typographyHeader} gutterBottom>
+                                            Redevelopmen
+                                        </Typography>
+                                        <Typography className={classes.typographyBody} gutterBottom>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
+                                        </Typography>
+                                    </CardContent>
+                                </Fade>
+                            </Grid>
+                            <Grid item xs={12} sm={4} md={4}>
+                                <Fade bottom delay={300}>
                                         <CardMedia
                                             className={classes.cardMedia}
                                             image="https://source.unsplash.com/random"
                                             title="Image title"
                                         />
-                                        <CardContent>
-                                            <Typography className={classes.typographyHeader} gutterBottom>
-                                                Redevelopmen
-                                            </Typography>
-                                            <Typography className={classes.typographyBody} gutterBottom>
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
-                                            </Typography>
-                                        </CardContent>
-                                    </Fade>
-                                </Grid>
-                                <Grid item xs={12} sm={4} md={4}>
-                                    <Fade right delay={300}>
+                                    <CardContent>
+                                        <Typography className={classes.typographyHeader} gutterBottom>
+                                            Redevelopmen
+                                        </Typography>
+                                        <Typography className={classes.typographyBody} gutterBottom>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
+                                        </Typography>
+                                    </CardContent>
+                                </Fade>
+                            </Grid>
+                            <Grid item xs={12} sm={4} md={4}>
+                                <Fade bottom delay={300}>
                                         <CardMedia
                                             className={classes.cardMedia}
                                             image="https://source.unsplash.com/random"
                                             title="Image title"
                                         />
-                                        <CardContent>
-                                            <Typography className={classes.typographyHeader} gutterBottom>
-                                                Redevelopmen
-                                            </Typography>
-                                            <Typography className={classes.typographyBody} gutterBottom>
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
-                                            </Typography>
-                                        </CardContent>
-                                    </Fade>
-                                </Grid>
-                                <Grid item xs={12} sm={4} md={4}>
-                                    <Fade right delay={300}>
-                                        <CardMedia
-                                            className={classes.cardMedia}
-                                            image="https://source.unsplash.com/random"
-                                            title="Image title"
-                                        />
-                                        <CardContent>
-                                            <Typography className={classes.typographyHeader} gutterBottom>
-                                                Redevelopmen
-                                            </Typography>
-                                            <Typography className={classes.typographyBody} gutterBottom>
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
-                                            </Typography>
-                                        </CardContent>
-                                    </Fade>
-                                </Grid>
-                                <Grid item xs={12} sm={4} md={4}>
-                                    <Fade right delay={300}>
-                                        <CardMedia
-                                            className={classes.cardMedia}
-                                            image="https://source.unsplash.com/random"
-                                            title="Image title"
-                                        />
-                                        <CardContent>
-                                            <Typography className={classes.typographyHeader} gutterBottom>
-                                                Redevelopmen
-                                            </Typography>
-                                            <Typography className={classes.typographyBody} gutterBottom>
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
-                                            </Typography>
-                                        </CardContent>
-                                    </Fade>
-                                </Grid>
-                                <Grid item xs={12} sm={4} md={4}>
-                                    <Fade right delay={300}>
-                                        <CardMedia
-                                            className={classes.cardMedia}
-                                            image="https://source.unsplash.com/random"
-                                            title="Image title"
-                                        />
-                                        <CardContent>
-                                            <Typography className={classes.typographyHeader} gutterBottom>
-                                                Redevelopmen
-                                            </Typography>
-                                            <Typography className={classes.typographyBody} gutterBottom>
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
-                                            </Typography>
-                                        </CardContent>
-                                    </Fade>
-                                </Grid>
-
+                                    <CardContent>
+                                        <Typography className={classes.typographyHeader} gutterBottom>
+                                            Redevelopmen
+                                        </Typography>
+                                        <Typography className={classes.typographyBody} gutterBottom>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
+                                        </Typography>
+                                    </CardContent>
+                                </Fade>
+                            </Grid>
+                                
+                                
+                                
 
 
                             </Grid>

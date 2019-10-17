@@ -1,10 +1,9 @@
-import React from "react";
-
-import { makeStyles } from '@material-ui/core/styles';
+import React from 'react'
+import { scroller } from 'react-scroll';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import Divider from '@material-ui/core/Divider';
+import { makeStyles } from '@material-ui/core/styles';
 
 
 const useStyles = makeStyles({
@@ -21,6 +20,17 @@ const useStyles = makeStyles({
 
 
 const SideDrawer = (props) => {
+
+    const scrollToElement = (element) => {
+        scroller.scrollTo(element, {
+            duration: 600,
+            delay: 100,
+            smooth: true,
+            offset: -30
+        });
+        props.onClose(false)
+    }
+
     const classes = useStyles();
     return (
         <Drawer
@@ -29,25 +39,27 @@ const SideDrawer = (props) => {
             open={props.open}
             onClose={() => props.onClose(false)}>
 
-            <List className={classes.list}>
-                <ListItem style={{ color: 'white' }}>
+            <List className={classes.list} component="nav">
+                <ListItem button style={{ color: 'white' }} onClick={() => scrollToElement('home')}>
+                    Home
+                </ListItem>
+                <ListItem button style={{ color: 'white' }} onClick={() => scrollToElement('about')}>
                     About
                 </ListItem>
-                <ListItem style={{ color: 'white' }}>
-                    Projects
+                <ListItem button style={{ color: 'white' }} onClick={() => scrollToElement('highlights')}>
+                    Highlights
                 </ListItem>
-                <ListItem style={{ color: 'white' }}>
+                <ListItem button style={{ color: 'white' }} onClick={() => scrollToElement('portfolio')}>
                     Portfolio
                 </ListItem>
-                <ListItem style={{ color: 'white' }}>
+                <ListItem button style={{ color: 'white' }} onClick={() => scrollToElement('contact')}>
                     Contact
                 </ListItem>
-                <ListItem style={{ color: 'white' }}>
-                    Press
-                </ListItem>
             </List>
+
         </Drawer>
     )
 }
 
 export default SideDrawer;
+

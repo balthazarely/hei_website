@@ -74,13 +74,17 @@ export default function Album() {
                 <Container maxWidth="md">
                     <Grid container spacing={4}>
                         <Grid item xs={12} sm={6} md={6}>
+                        <Fade left delay={300}>
                             <CardMedia
                                 className={classes.cardMedia}
                                 image="https://source.unsplash.com/random"
                                 title="Image title"
                             />
+                            </Fade>
                         </Grid>
                         <Grid item xs={12} sm={6} md={6}>
+          
+                            <Fade right delay={300}>
                             <Typography className={classes.typographyHeader} gutterBottom>
                                 <h2>Redevelopment</h2>
                             </Typography>
@@ -88,7 +92,8 @@ export default function Album() {
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
                                 voluptatum earum ratione ab qui! Nemo accusantium ipsam maiore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
                                 voluptatum earum ratione ab qui! Nemo accusantium ipsam maiore! Lorem ipsu
-                                </Typography>
+                            </Typography>
+                            </Fade>
                             <Fade bottom delay={1300}>
                                 <div className={classes.heroButtons}>
                                     <Grid container spacing={2} justify="center">

@@ -68,49 +68,29 @@ const Infomation = () => {
             <Grid container spacing={4} >
                 <Grid item xs={12} sm={6} md={6} >
                     <Typography style={{
+                        width: "300px",
                         color: 'white',
                         textShadow: '2px 2px #000000',
-                        lineHeight: "22px",
-                        fontSize: "18px"
+                        lineHeight: "24px",
+                        fontSize: "18px",
+                        // textAlign: "left"
                     }} >
                         2120 Bluebell Ave <br /> Boulder, CO 80302
                     </Typography>
                 </Grid>
                 <Grid item xs={12} sm={6} md={6}>
                     <Typography style={{
+                        width: "300px",
                         color: 'white',
                         textShadow: '2px 2px #000000',
-                        lineHeight: "22px",
-                        fontSize: "18px"
+                        lineHeight: "24px",
+                        fontSize: "18px",
+                        // textAlign: "left"
                     }} >
                         hello@hartmanely.com <br /> 303.444.4444
                     </Typography>
                 </Grid>
-                {/* <Fade top delay={500} >
-                    <Grid item xs={12} sm={4} md={4}>
-                        <Typography>
-                            <div style={{
-                                color: 'white',
-                                textShadow: '2px 2px #000000',
-                                lineHeight: "22px",
-                                fontSize: "18px",
-                                backgroundColor: "red"
-                            }}>2120 Bluebell Ave <br /> Boulder, CO <br />  80302</div>
-                        </Typography>
-                    </Grid>
-                    <Grid item xs={12} sm={4} md={4}>
-                        <Typography>
-                            <div style={{
-                                color: 'white',
-                                textShadow: '2px 2px #000000',
-                                lineHeight: "22px",
-                                fontSize: "18px"
 
-                            }}>2120 Bluebell Ave <br /> Boulder, CO <br />  80302</div>
-                        </Typography>
-                    </Grid>
-
-                </Fade> */}
             </Grid>
         </Container >
 
