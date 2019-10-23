@@ -49,6 +49,9 @@ const useStyles = makeStyles(theme => ({
         fontSize: "18px",
         align: "center"
     },
+    cardTypography: {
+        lineHeight: "26px"
+    },
     typographyBody: {
         align: "center",
         fontSize: "16px"
@@ -76,8 +79,8 @@ export default function Album() {
                 <div className={classes.heroContent}>
                     <Container maxWidth="md">
                         <Fade top delay={300}>
-                            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-                                Sustainability in Design
+                            <Typography component="h2" style={{ fontSize: "42px", fontWeight: 400 }} variant="h2" align="center" color="textPrimary" gutterBottom>
+                                Creating Sustainable Commmunities
 
                             </Typography>
                             <Typography variant="h5" align="center" color="textSecondary" paragraph>
@@ -101,7 +104,7 @@ export default function Album() {
                                         />
                                         <CardContent className={classes.typographyHeader}>
                                             <Typography className={classes.cardTypography} gutterBottom>
-                                                <h3>Redevelopment</h3>
+                                                <h2>Redevelopment</h2>
                                             </Typography>
                                             <Typography gutterBottom className={classes.typographyBody} variant="p" >
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
@@ -120,7 +123,7 @@ export default function Album() {
                                         />
                                         <CardContent className={classes.typographyHeader}>
                                             <Typography className={classes.cardTypography} gutterBottom>
-                                                <h3>Renewable Energy</h3>
+                                                <h2>Renewable Energy</h2>
                                             </Typography>
                                             <Typography gutterBottom className={classes.typographyBody} variant="p" >
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
@@ -139,7 +142,7 @@ export default function Album() {
                                         />
                                         <CardContent className={classes.typographyHeader}>
                                             <Typography className={classes.cardTypography} gutterBottom>
-                                                <h3>Other Projects</h3>
+                                                <h2>Other Projects</h2>
                                             </Typography>
                                             <Typography gutterBottom className={classes.typographyBody} variant="p" >
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
@@ -156,7 +159,7 @@ export default function Album() {
 
 
 
-                 
+
                     </Container>
                 </div>
 

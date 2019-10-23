@@ -11,13 +11,25 @@ import { Element } from 'react-scroll';
 import Header from './HOC/header/Header'
 import Footer from './HOC/footer/Footer'
 import ResAppBar from './HOC/header/ResAppBar';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+
+const useStyles = makeStyles(theme => ({
+  cardGrid: {
+    paddingTop: "50px",
+    paddingBottom: theme.spacing(8),
+  }
+}));
 
 
 function Routes() {
+  const classes = useStyles();
   return (
-    <div className="App" tyle={{ height: "", background: '' }} >
+    <div className="App" style={{ height: "", background: '' }} >
       {/* <Header /> */}
       {/* <ResAppBar /> */}
+
+
       <Element name="">
         <Featured />
       </Element>
@@ -40,7 +52,7 @@ function Routes() {
 
       {/* <Footer /> */}
 
-    </div>
+    </div >
   );
 }
 

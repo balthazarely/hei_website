@@ -55,13 +55,13 @@ const useStyles = makeStyles(theme => ({
     },
     typographyHeader: {
         fontSize: "18px",
-        textAlign: "left",
+        // textAlign: "left",
         fontWeight: '800',
     },
     typographyBody: {
         align: "center",
         fontSize: "14px",
-        textAlign: "left"
+
     },
     footer: {
         backgroundColor: theme.palette.background.paper,
@@ -82,9 +82,10 @@ export default function Projects() {
             <main>
                 <div className={classes.heroContent}>
                     <Container maxWidth="md">
-                        <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-                            Projects
-                        </Typography>
+                        <Typography component="h2" style={{ fontSize: "42px", fontWeight: 400 }} variant="h2" align="center" color="textPrimary" gutterBottom>
+                            Our Portfolio
+
+                            </Typography>
 
 
 
@@ -112,12 +113,20 @@ export default function Projects() {
                                             </div>
                                         </Link>
                                         <CardContent>
-                                            <Typography className={classes.typographyHeader} gutterBottom>
-                                                <Link style={{
-                                                    textDecoration: "none",
-                                                    color: "black",
-
+                                            <Typography
+                                                style={{
+                                                    fontSize: "18px",
+                                                    fontWeight: '800',
+                                                    lineHeight: "20px"
                                                 }}
+                                                className="portfolio-header"
+                                                gutterBottom>
+                                                <Link
+                                                    style={{
+                                                        textDecoration: "none",
+                                                        color: "black",
+
+                                                    }}
                                                     to="/fruitdale">Fruitdale School Lofts</Link>
                                             </Typography>
                                             <Typography className={classes.typographyBody} gutterBottom>
@@ -139,7 +148,14 @@ export default function Projects() {
                                             </div>
                                         </div>
                                         <CardContent>
-                                            <Typography className={classes.typographyHeader} gutterBottom>
+                                            <Typography
+                                                style={{
+                                                    fontSize: "18px",
+                                                    fontWeight: '800',
+                                                    lineHeight: "16px"
+                                                }}
+                                                className="portfolio-header"
+                                                gutterBottom>
                                                 <Link style={{
                                                     textDecoration: "none",
                                                     color: "black"
@@ -165,7 +181,14 @@ export default function Projects() {
                                             </div>
                                         </div>
                                         <CardContent>
-                                            <Typography className={classes.typographyHeader} gutterBottom>
+                                            <Typography
+                                                style={{
+                                                    fontSize: "18px",
+                                                    fontWeight: '800',
+                                                    lineHeight: "20px"
+                                                }}
+                                                className="portfolio-header"
+                                                gutterBottom>
                                                 <Link style={{
                                                     textDecoration: "none",
                                                     color: "black"
@@ -191,7 +214,14 @@ export default function Projects() {
                                             </div>
                                         </div>
                                         <CardContent>
-                                            <Typography className={classes.typographyHeader} gutterBottom>
+                                            <Typography
+                                                style={{
+                                                    fontSize: "18px",
+                                                    fontWeight: '800',
+                                                    lineHeight: "20px"
+                                                }}
+                                                className="portfolio-header"
+                                                gutterBottom>
                                                 <Link style={{
                                                     textDecoration: "none",
                                                     color: "black"
@@ -217,7 +247,14 @@ export default function Projects() {
                                             </div>
                                         </div>
                                         <CardContent>
-                                            <Typography className={classes.typographyHeader} gutterBottom>
+                                            <Typography
+                                                style={{
+                                                    fontSize: "18px",
+                                                    fontWeight: '800',
+                                                    lineHeight: "20px"
+                                                }}
+                                                className="portfolio-header"
+                                                gutterBottom>
                                                 <Link style={{
                                                     textDecoration: "none",
                                                     color: "black"
@@ -243,7 +280,14 @@ export default function Projects() {
                                             </div>
                                         </div>
                                         <CardContent>
-                                            <Typography className={classes.typographyHeader} gutterBottom>
+                                            <Typography
+                                                style={{
+                                                    fontSize: "18px",
+                                                    fontWeight: '800',
+                                                    lineHeight: "20px"
+                                                }}
+                                                className="portfolio-header"
+                                                gutterBottom>
                                                 <Link style={{
                                                     textDecoration: "none",
                                                     color: "black"
