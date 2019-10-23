@@ -1,14 +1,12 @@
 import React from 'react';
-
 import Infomation from './Infomation'
 import LazyHero from 'react-lazy-hero';
 import Fruitdale from '../../../resources/imgs/fruitdale.jpg'
 
 const Contact = () => {
     return (
-        <div>
+        <div >
             <LazyHero style={{
-
                 height: `${window.innerHeight / 2}px`
             }}
                 isFixed="true"
@@ -23,7 +21,7 @@ const Contact = () => {
             </LazyHero>
 
             {/* ... */}
-        </div>
+        </div >
     )
 }
 

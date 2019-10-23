@@ -6,7 +6,6 @@ import NukaCarousel from './NukaCarousel'
 import {
     Grid, Container, CardContent, Typography
 } from '@material-ui/core';
-import Iframe from 'react-iframe'
 import { makeStyles } from '@material-ui/core/styles';
 
 
@@ -71,10 +70,10 @@ const Projects = () => {
             <Container className={classes.cardGrid} maxWidth="md">
                 <Grid container className="single-portfolio-container" spacing={2}>
                     <Grid item xs={12} sm={8} md={8}>
-                        <Typography component="h2" variant="h4" align="left" color="textPrimary" gutterBottom>
+                        <Typography component="h2" variant="h3" align="left" color="textPrimary" gutterBottom>
                             Adaptive Use of National Register Historic Building
                         </Typography>
-                        <Typography component="h3" variant="h45" align="left" color="textSecondary" gutterBottom>
+                        <Typography component="h2" variant="h45" align="left" color="textSecondary" gutterBottom>
                             Wheat Ridge, Colorado
                         </Typography>
                     </Grid>
@@ -92,12 +91,14 @@ const Projects = () => {
                             operational costs as well as to provide community education on sustainable development.
                             The site includes a fruit orchard, low-water-use edible landscaping and free electric vehicle charging.
                         </Typography>
-
+                        <Typography component="h2" variant="h45" align="left" color="textSecondary" gutterBottom>
+                            Media
+                        </Typography>
                         <div style={{
                             textAlign: "left"
                         }}>
                             <MyButton
-                                text="Website"
+                                text="Wat"
                                 bck="#ffa800"
                                 color="white" />
                         </div>
@@ -132,38 +133,12 @@ const Projects = () => {
                             </div>
                         </Fade>
                     </Grid>
-
-
-
-
                     <Grid
                         item xs={12} sm={12} md={12} style={{
                             marginTop: "40px"
                         }}>
                         <NukaCarousel />
                     </Grid>
-
-                    <Grid
-                        item xs={12} sm={12} md={6}>
-                        <Iframe url="https://www.youtube.com/embed/NcsAn8GcbaM"
-                            className="video-box"
-                            width="450px"
-                            height="300px"
-                            id="myId"
-                            display="initial"
-                            position="relative" />
-                    </Grid>
-                    <Grid style={{ position: "relative" }}
-                        item xs={12} sm={12} md={6}>
-                        <Iframe url="https://www.youtube.com/embed/nDiRsbtbM-E"
-                            className="video-box"
-                            width="450px"
-                            height="300px"
-                            id="myId"
-                            display="initial"
-                            position="relative" />
-                    </Grid>
-
                 </Grid>
             </Container >
         </div >

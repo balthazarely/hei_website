@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 
 import Featured from './components/Home/featured';
-import Highlights from './components/Home/highlights';
 import Next from './components/Home/next'
 import MapContainer from './components/Home/map/'
 import Team from './components/Home/team'

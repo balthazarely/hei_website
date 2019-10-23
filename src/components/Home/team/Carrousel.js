@@ -8,7 +8,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import { red } from '@material-ui/core/colors'
-// import tileData from './tileData';
 
 
 const useStyles = makeStyles(theme => ({
@@ -22,7 +21,6 @@ const useStyles = makeStyles(theme => ({
     },
     gridList: {
         flexWrap: 'nowrap',
-        // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
         transform: 'translateZ(0)',
     },
     title: {
@@ -34,12 +32,6 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-
-//  * The example data is structured as follows:
-//  *
-//  * import image from 'path/to/image.jpg';
-//  * [etc...]
-//  *
 const tileData = [
     {
         img: Fruit1,
@@ -89,7 +81,6 @@ export default function Carrousel() {
     const classes = useStyles();
 
     return (
-        // <div className={classes.root}>
         <GridList cellHeight={400} className={classes.gridList} cols={7}>
             {tileData.map(tile => (
                 <GridListTile key={tile.img} cols={tile.cols || 1}>
@@ -97,6 +88,5 @@ export default function Carrousel() {
                 </GridListTile>
             ))}
         </GridList>
-        // </div>
     );
 }

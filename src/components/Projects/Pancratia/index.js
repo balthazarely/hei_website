@@ -1,12 +1,15 @@
 import React from 'react';
 import Fade from "react-reveal/Fade";
+
+
 import MyButton from '../../UI/MyButton'
+
 import HeroImage from './HeroImage'
 import NukaCarousel from './NukaCarousel'
+
 import {
     Grid, Container, CardContent, Typography
 } from '@material-ui/core';
-import Iframe from 'react-iframe'
 import { makeStyles } from '@material-ui/core/styles';
 
 
@@ -71,11 +74,11 @@ const Projects = () => {
             <Container className={classes.cardGrid} maxWidth="md">
                 <Grid container className="single-portfolio-container" spacing={2}>
                     <Grid item xs={12} sm={8} md={8}>
-                        <Typography component="h2" variant="h4" align="left" color="textPrimary" gutterBottom>
-                            Adaptive Use of National Register Historic Building
+                        <Typography component="h2" variant="h3" align="left" color="textPrimary" gutterBottom>
+                            The Historic Fruitdale Lofts
                         </Typography>
-                        <Typography component="h3" variant="h45" align="left" color="textSecondary" gutterBottom>
-                            Wheat Ridge, Colorado
+                        <Typography component="h2" variant="h45" align="left" color="textSecondary" gutterBottom>
+                            Wheatridge | Colorado | Historic
                         </Typography>
                     </Grid>
 
@@ -83,21 +86,20 @@ const Projects = () => {
                         <Typography variant="p" align="left" color="textSecondary" paragraph style={{
                             paddingRight: "30px"
                         }}>
-                            A public/private partnership between Fruitdale School Partners, The City of Wheat Ridge
-                            and The Wheat Ridge Housing Authority created a unique residential community of 16 affordable
-                            rental apartments. Historic interior features such as huge operable windows, high ceilings,
-                             chalk boards and basketball hoops from the prior school are featured.<br />
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore atque ducimus nemo ullam,
+                             eum distinctio quos saepe totam facere obcaecati, corrupti, nihil itaque earum?
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore atque ducimus nemo ullam,
+                             eum distinctio quos saepe totam facere obcaecati, corrupti, nihil itaque earum? <br />
                             <br />
-                            The entire property is solar-powered and has numerous energy efficiency features to minimize
-                            operational costs as well as to provide community education on sustainable development.
-                            The site includes a fruit orchard, low-water-use edible landscaping and free electric vehicle charging.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore atque ducimus nemo ullam,
+                            eum distinctio quos saepe totam facere obcaecati, corrupti, nihil itaque earum?
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         </Typography>
-
                         <div style={{
                             textAlign: "left"
                         }}>
                             <MyButton
-                                text="Website"
+                                text="Visit Website"
                                 bck="#ffa800"
                                 color="white" />
                         </div>
@@ -132,38 +134,12 @@ const Projects = () => {
                             </div>
                         </Fade>
                     </Grid>
-
-
-
-
                     <Grid
                         item xs={12} sm={12} md={12} style={{
                             marginTop: "40px"
                         }}>
                         <NukaCarousel />
                     </Grid>
-
-                    <Grid
-                        item xs={12} sm={12} md={6}>
-                        <Iframe url="https://www.youtube.com/embed/NcsAn8GcbaM"
-                            className="video-box"
-                            width="450px"
-                            height="300px"
-                            id="myId"
-                            display="initial"
-                            position="relative" />
-                    </Grid>
-                    <Grid style={{ position: "relative" }}
-                        item xs={12} sm={12} md={6}>
-                        <Iframe url="https://www.youtube.com/embed/nDiRsbtbM-E"
-                            className="video-box"
-                            width="450px"
-                            height="300px"
-                            id="myId"
-                            display="initial"
-                            position="relative" />
-                    </Grid>
-
                 </Grid>
             </Container >
         </div >

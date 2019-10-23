@@ -74,7 +74,6 @@ export default function () {
         <React.Fragment>
             <CssBaseline />
             <main className={classes.heroContent}>
-
                 <Container maxWidth="md">
                     <Typography component="h1" variant="h3" align="center" className={classes.typographyHeader2} color="textPrimary" gutterBottom>
 
@@ -103,9 +102,6 @@ export default function () {
                             </Fade>
                         </Grid>
                     </Grid>
-
-
-
                 </Container>
             </main>
         </React.Fragment>

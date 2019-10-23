@@ -1,6 +1,8 @@
 import React from 'react';
 import Fade from "react-reveal/Fade";
 import MyButton from '../../UI/MyButton'
+import MyButtonAboutUs from '../../UI/MyButtonAboutUs'
+
 
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
@@ -69,7 +71,7 @@ const Text2 = () => {
                         // letterSpacing: "2px",
                         textShadow: "2px 2px 3px rgba(0,0,0,0.58)"
 
-                    }}>Company History</div>
+                    }}>Historic Buildings are our passion</div>
 
                 </Typography>
             </Fade>
@@ -79,23 +81,21 @@ const Text2 = () => {
                         color: 'white',
 
                         fontSize: "22px",
-                        // textTransform: "uppercase",
                         fontWeight: "200",
-                        // letterSpacing: "2px",
                         textShadow: "2px 2px 3px rgba(0,0,0,0.58)"
 
-                    }}><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus itaque alias officia ut non, a quia illum nobis numquam enim sequi architecto deserunt harum aliquam? Esse voluptates quos accusamus laboriosam.</p>   </div>
+                    }}><p>Founded in 2000 by Jim Hartman and Susan Ely, Hartman Ely Investments is one of the most respected historic redevelopment firms in Colorado.</p>   </div>
 
                 </Typography>
             </Fade>
             <Fade bottom delay={900} >
-                <MyButton
+                <MyButtonAboutUs
+                    link="/about"
                     text="About Us"
                     bck="#ffa800"
                     color="white" />
             </Fade>
         </Container >
-
 
 
     );

@@ -1,8 +1,9 @@
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import TicketIcon from '../../resources/icons/ticket.png';
 
-const MyButton = (props) => {
+const MyButtonAboutUs = (props) => {
     return (
         <Button
             href={props.link}
@@ -13,17 +14,12 @@ const MyButton = (props) => {
                 color: props.color
             }}
         >
-            <img src={TicketIcon}
-                className="iconImage"
-                alt="icon_button" />
             {props.text}
+            <ArrowForwardIcon style={{ height: "14px" }} />
+
         </Button>
     )
 }
 
-export default MyButton;
-
-
-
-
+export default MyButtonAboutUs;
 
