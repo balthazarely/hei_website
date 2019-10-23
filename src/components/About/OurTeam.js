@@ -81,60 +81,60 @@ export default function OurTeam() {
 
 
                         <Container className={classes.cardGrid} maxWidth="md">
-                        <Fade bottom delay={200}>
-                            <Grid container spacing={1}>
+                            <Fade bottom delay={200}>
+                                <Grid container spacing={1}>
 
-                                <Grid item xs={12} sm={4} md={4}>
-                                    <CardContent >
-                                        <CardMedia
-                                            className={classes.cardMedia}
-                                            image={Jim}
-                                            overflow="hidden"
-                                            title="Image title"
-                                        />
-                                    </CardContent>
-                                </Grid>
-                                <Grid item xs={12} sm={8} md={8}>
-                                    <CardContent >
-                                        <Typography variant="h5" align="left" color="textSecondary" paragraph>
-                                            Jim Hartman
+                                    <Grid item xs={12} sm={4} md={4}>
+                                        <CardContent >
+                                            <CardMedia
+                                                className={classes.cardMedia}
+                                                image={Jim}
+                                                overflow="hidden"
+                                                title="Image title"
+                                            />
+                                        </CardContent>
+                                    </Grid>
+                                    <Grid item xs={12} sm={8} md={8}>
+                                        <CardContent >
+                                            <Typography variant="h5" align="left" color="textSecondary" paragraph>
+                                                Jim Hartman
                                         </Typography>
-                                        <Typography className={classes.typographyBody} >
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
-                                            voluptatum earum ratione ab qui! Nemo accusantium ipsam maiore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
-                                            voluptatum earum ratione ab qui! Nemo accusantium ipsam maiore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
-                                            voluptatum earum ratione ab qui! Nemo accusantium ipsam maiore!
-                                 </Typography>
-                                    </CardContent>
-                                </Grid>
-
-                                <Grid item xs={12} sm={8} md={8}>
-                                    <CardContent >
-                                        <Typography variant="h5" align="left" color="textSecondary" paragraph>
-                                            Susan Ely
-                                        </Typography>
-                                        <Typography className={classes.typographyBody} >
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
+                                            <Typography className={classes.typographyBody} >
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
                                                 voluptatum earum ratione ab qui! Nemo accusantium ipsam maiore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
                                                 voluptatum earum ratione ab qui! Nemo accusantium ipsam maiore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
                                                 voluptatum earum ratione ab qui! Nemo accusantium ipsam maiore!
+                                 </Typography>
+                                        </CardContent>
+                                    </Grid>
+
+                                    <Grid item xs={12} sm={8} md={8}>
+                                        <CardContent >
+                                            <Typography variant="h5" align="left" color="textSecondary" paragraph>
+                                                Susan Ely
                                         </Typography>
-                                    </CardContent>
+                                            <Typography className={classes.typographyBody} >
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
+                                                    voluptatum earum ratione ab qui! Nemo accusantium ipsam maiore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
+                                                    voluptatum earum ratione ab qui! Nemo accusantium ipsam maiore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
+                                                    voluptatum earum ratione ab qui! Nemo accusantium ipsam maiore!
+                                        </Typography>
+                                        </CardContent>
+                                    </Grid>
+
+                                    <Grid item xs={12} sm={4} md={4}>
+                                        <CardContent >
+                                            <CardMedia
+                                                className={classes.cardMedia}
+                                                image={Sue}
+                                                overflow="hidden"
+                                                title="Image title"
+                                            />
+                                        </CardContent>
+                                    </Grid>
+
+
                                 </Grid>
-
-                                <Grid item xs={12} sm={4} md={4}>
-                                    <CardContent >
-                                        <CardMedia
-                                            className={classes.cardMedia}
-                                            image={Sue}
-                                            overflow="hidden"
-                                            title="Image title"
-                                        />
-                                    </CardContent>
-                                </Grid>
-
-
-                            </Grid>
                             </Fade>
                         </Container>
 

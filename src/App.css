@@ -5,9 +5,10 @@ body {
  }
 
 
+
  @media only screen and (max-width: 2000px) {
   .responsive-image-bg {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     transition: all 1000ms ease-in-out;
   }
   .portfolio-header {
@@ -16,11 +17,18 @@ body {
   .header-text {
     font-size: 56px;
   }
+  .imageBox {
+    height: 550px;
+  }
+  .heroImageBase {
+    position: relative;
+    margin-top: 0px;
+  }
 }
 
  @media only screen and (max-width: 600px) {
   .responsive-image-bg {
-    height: 400px;
+    /* height: 400px; */
     transition: all 1000ms ease-in-out;
   }
   .portfolio-header {
@@ -29,13 +37,21 @@ body {
   .header-text {
     font-size: 42px;
   }
-}
+  .imageBox {
+    height: 250px;
+  }
+  .heroImageBase {
+    position: relative;
+    margin-top: -90px;
+  }
+ }
 
 
 .heroImageBase {
   position: relative;
   transition: all 1000ms ease-in-out;
 }
+
 .HeroImageOverlay {
   width: 100%;
   height: 100%;
@@ -43,10 +59,16 @@ body {
   top: 0;
   left: 0;
   background-color: #2d2d2d;
-  transition: all 1000ms ease-in-out;
+  transition: all 850ms ease-in-out;
   }
 
-
+.imageBox {
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  width: auto;
+  background-repeat: no-repeat;
+}
 
 
  .bck_black {
@@ -79,6 +101,7 @@ body {
 
 header {
   padding:10px 0px;
+  transition: all .6s ease-in-out;
 }
 
 header .header_logo {
@@ -99,7 +122,12 @@ header .header_logo_venue {
 
 .appBar {
   transition: all 300ms ease-in-out;
+  animation: fadein 2s;
+}
 
+.single-portfolio-container {
+  transition: all 500ms ease-in-out;
+  animation: fadein 2s;
 }
 
 
@@ -257,7 +285,9 @@ header .header_logo_venue {
 
 .container {
   position: relative;
-  transition: all 0.2s ease;
+  transition: all 0.4s ease;
+  mix-blend-mode: multiply;
+  perspective: 40px;
 }
 
 .image {
@@ -265,7 +295,8 @@ header .header_logo_venue {
   width: 100%;
   height: auto;
   padding-top: 56.25%;
-  transition: all 0.2s ease;
+  transition: all 0.4s ease;
+  mix-blend-mode: multiply;
 }
 
 .overlay {
@@ -277,18 +308,32 @@ header .header_logo_venue {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
   background-color: #ffa800;
-  transition: all 0.2s ease;
+  transition: all 0.4s ease;
 }
 
 .container:hover .overlay {
-  opacity: .35;
+  opacity: .27;
 }
+
 .container:hover .image, .overlay{
   transform: scale(1.05);
+  box-shadow: inset 0 0 0 5px #ffa800;
 }
-.
+
+.arrow-icon {
+  color: white;
+  
+}
+.arrow-icon:hover {
+  color: #ffa800;
+  transition: all .6s ease-in-out;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.arrow-icon:focus {
+  background-color: green;
+}
 
 /* .about-us-img {
   
@@ -321,6 +366,25 @@ header .header_logo_venue {
 }
 
 
+@media only screen and (max-width: 2000px) {
+  .footer{
+    padding: 50px;
+    height: 175px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .footer{
+    padding: 30px;
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .footer{
+    padding: 30px;
+    height: 220px;
+  }
+}
 
 
 
@@ -379,3 +443,19 @@ header .header_logo_venue {
 /*====================
       FADEIN
 ======================*/
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+
+.menu-item {
+  cursor: pointer;
+  margin: 100px;
+  /* background-color: #00BCD4 !important; */
+}
+.menu-item:hover {
+  background-color: #ffa800 !important;
+  color: #FFF;
+}

@@ -147,7 +147,7 @@ class Featured extends Component {
     }
 
     HandelScroll = () => {
-        if (window.scrollY < 420) {
+        if (window.scrollY < 200) {
             this.setState({
                 imageOpacity: false
             })
@@ -173,64 +173,12 @@ class Featured extends Component {
                     imageSrc={Fruitdale}>
                     <div className="HeroImageOverlay "
                         style={{
-                            opacity: this.state.imageOpacity ? ".8" : "0",
-                            transform: " opacity 0.6s ease-out, transform 1.2s ease-out"
+                            opacity: this.state.imageOpacity ? ".9" : "0",
 
-                        }}> </div>
+                        }}>
+                    </div>
                     <Text />
                 </LazyHero>
-
-
-
-                {/* <div className="responsive-image-bg"
-                    //     style={{
-                    //         background: `url(${Fruitdale})`,
-                    //         width: "100%",
-                    //         backgroundSize: "cover",
-                    //         backgroundPosition: "center center"
-                    //     }}>
-
-
-
-
-                        {/* <Fade top delay={500} >
-                            <div style={{
-                                width: "600px",
-                                height: "400px",
-                                position: "absolute",
-                                top: "0",
-                                bottom: "0",
-                                left: "0",
-                                right: "0",
-                                textAlign: "center",
-                                margin: "auto"
-
-
-                            }}>
-                                <Container style={{
-                                    position: "relative",
-                                    float: "left",
-                                    top: "50%",
-                                    left: "50%",
-                                    transform: "translate(-50%, -50%)",
-                                    color: 'white',
-                                    textShadow: '2px 2px #000000',
-                                    fontSize: "56px",
-                                    lineHeight: "56px",
-                                    textTransform: "uppercase",
-                                    fontWeight: "800",
-                                    letterSpacing: "2px",
-                                    textShadow: "2px 2px 3px rgba(0,0,0,0.58)"
-                                }}>Creating Sustainable Commmunitiest
-                                </Container>
-
-                            </div>
-                        </Fade> */}
-
-                {/* </div> */}
-
-
-
             </div>
 
 

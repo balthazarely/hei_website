@@ -114,6 +114,7 @@ class ResAppBar extends Component {
                         backgroundColor: "#2d2d2d",
                         padding: this.state.showMenu ? '20px 0px' : '0px 0px',
                         boxShadow: 'none',
+                        transition: " all 300ms ease-in-out"
                     }}>
                     <Toolbar>
                         <Grid container direction="row" justify="space-between" alignItems="center">
@@ -180,7 +181,7 @@ class ResAppBar extends Component {
     destroyDrawer() {
         const scrollToElement = (element) => {
             scroller.scrollTo(element, {
-                duration: 600,
+                duration: 1000,
                 delay: 100,
                 smooth: true,
                 offset: -30
@@ -189,11 +190,14 @@ class ResAppBar extends Component {
 
         const { classes } = this.props
         return (
-            <AppBar
+
+            <AppBar className="appBar"
                 style={{
                     backgroundColor: "#2d2d2d",
                     padding: this.state.showMenu ? '20px 0px' : '0px 0px',
-                    boxShadow: 'none'
+                    boxShadow: 'none',
+                    transition: " all 300ms ease-in-out"
+
                 }}>
                 <Toolbar>
                     <Typography variant="headline" style={{ flexGrow: 1 }} >
@@ -206,18 +210,27 @@ class ResAppBar extends Component {
                                 src={`${Logo}`} />
                         </Link>
                     </Typography>
-                    <ButtonGroup>
-                        <Button variant="subheading" className={classes.padding}
+
+                    <div>
+                        <Button variant="primary" className="menu-item"
                             color="inherit" onClick={() => scrollToElement('mission')} >Mission</Button>
-                        <Button variant="subheading" className={classes.padding}
+                    </div>
+                    <div>
+                        <Button variant="primary" className="menu-item"
                             color="inherit" onClick={() => scrollToElement('portfolio')} >Portfolio</Button>
-                        <Button variant="subheading" className={classes.padding}
+                    </div>
+                    <div>
+                        <Button variant="primary" className="menu-item"
                             color="inherit" href="/about" >About</Button>
-                        <Button variant="subheading" className={classes.padding}
+                    </div>
+                    <div>
+                        <Button variant="primary" className="menu-item"
                             color="inherit" onClick={() => scrollToElement('contact')}  >Contact</Button>
-                    </ButtonGroup>
+                    </div>
+
                 </Toolbar>
             </AppBar>
+
         )
     }
 

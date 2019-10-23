@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
 const Footer = () => {
     const classes = useStyles();
     return (
-        <footer className="bck_black" style={{ padding: "50px", height: "220px" }}>
+        <footer className="bck_black footer" >
             <Grid container spacing={4}>
                 <Grid item xs={12} sm={6} md={6}>
                     <div className="font_righteous footer_logo" style={{ color: "#dddddd", fontSize: "20px" }}>Hartman Ely Investments</div>
@@ -38,7 +38,7 @@ const Footer = () => {
                         <LocationOn className={classes.icon} /> 2120 Bluebell Ave.
                         <br /> &nbsp;&nbsp;&nbsp;&nbsp; Boulder, CO 80302
                         <br /> <Phone className={classes.icon} /> (303) 448-1080
-                        <br /> <Email className={classes.icon} /> infomation@hartmanelyinvestments.com
+                        <br /> <Email className={classes.icon} /> infomation@hartmanely.com
                     </div>
                 </Grid>
 

@@ -77,7 +77,7 @@ const Projects = () => {
             <HeroImage />
 
             <Container className={classes.cardGrid} maxWidth="md">
-                <Grid container spacing={2}>
+                <Grid container className="single-portfolio-container" spacing={2}>
 
 
                     <Grid item xs={12} sm={8} md={8}>

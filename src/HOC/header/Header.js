@@ -44,13 +44,13 @@ export default class Header extends Component {
 
     render() {
         return (
-
-            <AppBar class="appBar"
+            <AppBar className="appBar"
                 position="fixed"
                 style={{
                     backgroundColor: "#2d2d2d",
                     padding: this.state.showMenu ? '15px 0px' : '0px 0px',
-                    boxShadow: 'none'
+                    boxShadow: 'none',
+
                 }}>
 
                 <Toolbar>
@@ -60,6 +60,7 @@ export default class Header extends Component {
                                 className="logo"
                                 style={{
                                     width: this.state.showMenu ? "300px" : '200px',
+
                                 }}
                                 src={`${Logo}`}
                             />
