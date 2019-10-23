@@ -84,6 +84,8 @@ export default function Album() {
                             <Typography variant="h5" align="center" color="textSecondary" paragraph>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore atque ducimus nemo ullam,
                                  eum distinctio quos saepe totam facere obcaecati, corrupti, nihil itaque earum?
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore atque ducimus nemo ullam,
+                                 eum distinctio quos saepe totam facere obcaecati, corrupti, nihil itaque earum?
                         </Typography>
                         </Fade>
                     </Container>

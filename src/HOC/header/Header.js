@@ -45,7 +45,7 @@ export default class Header extends Component {
     render() {
         return (
 
-            <AppBar
+            <AppBar class="appBar"
                 position="fixed"
                 style={{
                     backgroundColor: "#2d2d2d",

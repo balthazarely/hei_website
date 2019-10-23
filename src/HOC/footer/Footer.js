@@ -19,12 +19,12 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
-
+// could write 2 different headeds based on screen size
 
 const Footer = () => {
     const classes = useStyles();
     return (
-        <footer className="bck_black" style={{ padding: "50px", height: "150px" }}>
+        <footer className="bck_black" style={{ padding: "50px", height: "220px" }}>
             <Grid container spacing={4}>
                 <Grid item xs={12} sm={6} md={6}>
                     <div className="font_righteous footer_logo" style={{ color: "#dddddd", fontSize: "20px" }}>Hartman Ely Investments</div>

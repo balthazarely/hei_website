@@ -50,7 +50,7 @@ const useStyles = makeStyles(theme => ({
 
 
 
-const Headline = (props) => {
+const Text = () => {
     const classes = useStyles();
 
     return (
@@ -62,20 +62,20 @@ const Headline = (props) => {
                     <div style={{
                         color: 'white',
                         textShadow: '2px 2px #000000',
-                        fontSize: props.textSize,
+                        fontSize: "56px",
                         textTransform: "uppercase",
                         fontWeight: "800",
                         letterSpacing: "2px",
                         textShadow: "2px 2px 3px rgba(0,0,0,0.58)"
 
-                    }}>Creating Sustainable Commmunities</div>
+                    }}>Fruitdale Lofts</div>
                 </Typography>
             </Fade>
             <Fade bottom delay={900} >
-                <MyButton
+                {/* <MyButton
                     text="Locations"
                     bck="#ffa800"
-                    color="white" />
+                    color="white" /> */}
             </Fade>
         </Container >
 
@@ -84,44 +84,7 @@ const Headline = (props) => {
     );
 }
 
-export default Headline;
+export default Text;
 
-
-// import React from 'react';
-// import Fade from 'react-reveal/Fade';
-// import { makeStyles } from '@material-ui/core/styles';
-// import Button from '@material-ui/core/Button';
-
-
-// const useStyles = makeStyles(theme => ({
-//     button: {
-//         margin: theme.spacing(1),
-//     },
-//     input: {
-//         display: 'none',
-//     },
-// }));
-
-// const Headline = () => {
-//     const classes = useStyles();
-//     return (
-//         <div>
-//             <div className="artist_name">
-//                 <Fade top delay={500}>
-//                     <h5>Find Your Ideal Night</ h5>
-//                 </Fade>
-//             </div >
-//             <div className="main_btn">
-//                 <Fade bottom delay={1300}>
-//                     <Button variant="contained" >
-//                         Get Started
-//                     </Button>
-//                 </Fade>
-//             </div>
-//         </div >
-//     )
-// }
-
-// export default Headline;
 
 

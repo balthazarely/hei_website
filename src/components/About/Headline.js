@@ -1,6 +1,6 @@
 import React from 'react';
 import Fade from "react-reveal/Fade";
-import MyButton from '../../UI/MyButton'
+import MyButton from '../UI/MyButton'
 
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
@@ -50,7 +50,7 @@ const useStyles = makeStyles(theme => ({
 
 
 
-const Headline = (props) => {
+const Headline = () => {
     const classes = useStyles();
 
     return (
@@ -58,24 +58,21 @@ const Headline = (props) => {
 
         <Container maxWidth="md">
             <Fade top delay={500} >
-                <Typography component="h1" variant="h2" color="white" align="center" gutterBottom>
+                <Typography component="h1" variant="h2" color="white" align="center" className="" gutterBottom>
                     <div style={{
+
                         color: 'white',
                         textShadow: '2px 2px #000000',
-                        fontSize: props.textSize,
+                        fontSize: "56px",
                         textTransform: "uppercase",
-                        fontWeight: "800",
+                        fontWeight: "300",
                         letterSpacing: "2px",
-                        textShadow: "2px 2px 3px rgba(0,0,0,0.58)"
+                        textShadow: "2px 2px 3px rgba(0,0,0,0.58)",
+                        marginTop: "100px",
 
-                    }}>Creating Sustainable Commmunities</div>
+                    }}>Historic Buildings <br /> <span style={{ fontWeight: "800" }}>are our passion</span></div>
                 </Typography>
-            </Fade>
-            <Fade bottom delay={900} >
-                <MyButton
-                    text="Locations"
-                    bck="#ffa800"
-                    color="white" />
+
             </Fade>
         </Container >
 
@@ -87,41 +84,5 @@ const Headline = (props) => {
 export default Headline;
 
 
-// import React from 'react';
-// import Fade from 'react-reveal/Fade';
-// import { makeStyles } from '@material-ui/core/styles';
-// import Button from '@material-ui/core/Button';
-
-
-// const useStyles = makeStyles(theme => ({
-//     button: {
-//         margin: theme.spacing(1),
-//     },
-//     input: {
-//         display: 'none',
-//     },
-// }));
-
-// const Headline = () => {
-//     const classes = useStyles();
-//     return (
-//         <div>
-//             <div className="artist_name">
-//                 <Fade top delay={500}>
-//                     <h5>Find Your Ideal Night</ h5>
-//                 </Fade>
-//             </div >
-//             <div className="main_btn">
-//                 <Fade bottom delay={1300}>
-//                     <Button variant="contained" >
-//                         Get Started
-//                     </Button>
-//                 </Fade>
-//             </div>
-//         </div >
-//     )
-// }
-
-// export default Headline;
 
 

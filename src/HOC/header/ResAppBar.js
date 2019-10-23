@@ -108,12 +108,12 @@ class ResAppBar extends Component {
         const { classes } = this.props
 
         return (
-            <div>
-                <AppBar
+            <header>
+                <AppBar className="appBar"
                     style={{
                         backgroundColor: "#2d2d2d",
                         padding: this.state.showMenu ? '20px 0px' : '0px 0px',
-                        boxShadow: 'none'
+                        boxShadow: 'none',
                     }}>
                     <Toolbar>
                         <Grid container direction="row" justify="space-between" alignItems="center">
@@ -158,7 +158,7 @@ class ResAppBar extends Component {
                                 <ListItemText className={classes.listItem}>Portfolio</ListItemText>
                             </ListItem>
 
-                            <ListItem button style={{ color: 'white' }} onClick={() => scrollToElement('about')}>
+                            <ListItem button style={{ color: 'white' }} href="/about" >
                                 <ListItemIcon><GroupIcon className={classes.icon} /> </ListItemIcon>
                                 <ListItemText className={classes.listItem}>About</ListItemText>
                             </ListItem>
@@ -172,7 +172,7 @@ class ResAppBar extends Component {
                     </div>
                 </SwipeableDrawer>
 
-            </div>
+            </header>
         );
     }
 
@@ -212,7 +212,7 @@ class ResAppBar extends Component {
                         <Button variant="subheading" className={classes.padding}
                             color="inherit" onClick={() => scrollToElement('portfolio')} >Portfolio</Button>
                         <Button variant="subheading" className={classes.padding}
-                            color="inherit" onClick={() => scrollToElement('About')} >About</Button>
+                            color="inherit" href="/about" >About</Button>
                         <Button variant="subheading" className={classes.padding}
                             color="inherit" onClick={() => scrollToElement('contact')}  >Contact</Button>
                     </ButtonGroup>

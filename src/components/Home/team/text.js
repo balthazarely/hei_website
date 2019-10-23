@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
         marginRight: theme.spacing(2),
     },
     heroContent: {
-        backgroundColor: "#dddddd",
+        backgroundColor: "#eaeaea",
         padding: theme.spacing(8, 0, 6),
         padding: "50px"
     },
@@ -77,8 +77,8 @@ export default function () {
 
                 <Container maxWidth="md">
                     <Typography component="h1" variant="h3" align="center" className={classes.typographyHeader2} color="textPrimary" gutterBottom>
-                        Something Here
-                        </Typography>
+
+                    </Typography>
                     <Grid container spacing={4}>
                         <Grid item xs={12} sm={6} md={6}>
                             <Fade left delay={300}>

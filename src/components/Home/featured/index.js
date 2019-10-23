@@ -1,55 +1,46 @@
 import React from 'react';
+import Carousel from './Carousel';
 import Headline from './Headline';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+import Fade from "react-reveal/Fade";
+import MyButton from '../../UI/MyButton'
 
-import LazyHero from 'react-lazy-hero';
-import Fruitdale from '../../../resources/imgs/fruitdale.jpg'
+
+
+
+
+
+
 
 const Featured = () => {
     return (
         <div>
-            <LazyHero style={{
 
-                height: `${window.innerHeight}px`
-            }}
-                isFixed="true"
-                opacity=".2"
-                color="#2d2d2d"
-                parallaxOffset="100"
-                transitionDuration="600"
-                transitionTimingFunction="ease-in-out"
-                imageSrc={Fruitdale}>
-                <Headline />
+            <Carousel />
+            {/* <Headline /> */}
+            {/* <Container maxWidth="md"> */}
 
-                {/* https://cdn.pixabay.com/photo/2018/05/10/11/34/concert-3387324_1280.jpg */}
-            </LazyHero>
+            {/* <div style={{
+                position: "absolute",
+                fontSize: "56px",
+                fontWeight: "800",
+                color: "white",
+                top: "50%",
+                left: "50%",
+                height: "160px",
+                letterSpacing: "2px",
+                transform: "translate(-50%, -50%)",
+                textShadow: "2px 2px 3px rgba(0,0,0,0.58)"
+            }}>
+                Creating Sustainable Commmunities </div> */}
 
-            {/* ... */}
+
+            {/* </Container> */}
         </div>
+
     )
 }
 
 export default Featured;
-
-
-
-// import React from 'react';
-// import Headline from './Headline';
-// import slide_one from '../../resources/imgs/image_3.jpg';
-
-
-
-// const Featured = () => {
-//     return (
-//         <div>
-//             <div style={{
-//                 background: `url(${slide_one})`,
-//                 backgroundSize: "cover",
-//                 height: `${window.innerHeight}px`
-//             }}>
-//             </div>
-//             <Headline />
-//         </div>
-//     )
-// }
-
-// export default Featured;

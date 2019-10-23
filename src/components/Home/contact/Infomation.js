@@ -57,7 +57,7 @@ const Infomation = () => {
 
 
         <Container maxWidth="md">
-            <Fade top delay={500} >
+            <Fade top delay={300} >
                 <Typography component="h1" variant="h2" color="white" align="center" className="" gutterBottom>
                     <div style={{
                         color: 'white',

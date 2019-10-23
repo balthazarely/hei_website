@@ -1,11 +1,11 @@
 import React from 'react';
 import Fade from "react-reveal/Fade";
-import MyButton from '../../UI/MyButton'
+import MyButton from '../UI/MyButton'
 
 
-import Steamplant from '../../../resources/imgs/Steamplant.jpg'
-import Hanger from '../../../resources/imgs/hanger2.3.jpg'
-import Innovage from '../../../resources/imgs/innovage.jpg'
+import Steamplant from '../../resources/imgs/Steamplant.jpg'
+import Hanger from '../../resources/imgs/hanger2.3.jpg'
+import Innovage from '../../resources/imgs/innovage.jpg'
 
 
 import CardContent from '@material-ui/core/CardContent';
@@ -60,6 +60,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
+
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const cardReview = ["Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum aliquam debitis earum beatae alias quia optio molestias dolore cupiditate deserunt!", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum aliquam debitis earum beatae alias quia optio molestias dolore cupiditate deserunt!", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum aliquam debitis earum beatae alias quia optio molestias dolore cupiditate deserunt!"]
 
@@ -75,88 +76,62 @@ export default function Album() {
 
                 <div className={classes.heroContent}>
                     <Container maxWidth="md">
-                        <Fade top delay={300}>
-                            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-                                Sustainability in Design
 
-                            </Typography>
-                            <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore atque ducimus nemo ullam,
-                                 eum distinctio quos saepe totam facere obcaecati, corrupti, nihil itaque earum?
+                        <Typography variant="h5" align="center" color="textSecondary" paragraph>
+                            Founded in 2000 by Jim Hartman and Susan Ely, Hartman Ely Investments is
+                            one of the most respected historic redevelopment firms in Colorado.
                         </Typography>
-                        </Fade>
+
 
 
 
                         <Container className={classes.cardGrid} maxWidth="md">
                             <Grid container spacing={4}>
 
-                                <Grid item xs={12} sm={4} md={4}>
-                                    <Fade right delay={200}>
-                                        <CardMedia
-                                            className={classes.cardMedia}
-                                            image={Steamplant}
-                                            overflow="hidden"
-                                            title="Image title"
-                                        />
-                                        <CardContent className={classes.typographyHeader}>
-                                            <Typography className={classes.cardTypography} gutterBottom>
-                                                <h3>Redevelopment</h3>
-                                            </Typography>
-                                            <Typography gutterBottom className={classes.typographyBody} variant="p" >
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
-                                                voluptatum earum ratione ab qui! Nemo accusantium ipsam maiore!
-                                            </Typography>
-                                        </CardContent>
-                                    </Fade>
-                                </Grid>
-                                <Grid item xs={12} sm={4} md={4}>
-                                    <Fade right delay={400}>
-                                        <CardMedia
-                                            className={classes.cardMedia}
-                                            image={Hanger}
-                                            overflow="hidden"
-                                            title="Image title"
-                                        />
-                                        <CardContent className={classes.typographyHeader}>
-                                            <Typography className={classes.cardTypography} gutterBottom>
-                                                <h3>Renewable Energy</h3>
-                                            </Typography>
-                                            <Typography gutterBottom className={classes.typographyBody} variant="p" >
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
-                                                voluptatum earum ratione ab qui! Nemo accusantium ipsam maiore!
-                                            </Typography>
-                                        </CardContent>
-                                    </Fade>
-                                </Grid>
-                                <Grid item xs={12} sm={4} md={4}>
-                                    <Fade right delay={600}>
-                                        <CardMedia
-                                            className={classes.cardMedia}
-                                            image={Innovage}
-                                            overflow="hidden"
-                                            title="Image title"
-                                        />
-                                        <CardContent className={classes.typographyHeader}>
-                                            <Typography className={classes.cardTypography} gutterBottom>
-                                                <h3>Other Projects</h3>
-                                            </Typography>
-                                            <Typography gutterBottom className={classes.typographyBody} variant="p" >
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
-                                                voluptatum earum ratione ab qui! Nemo accusantium ipsam maiore!
-                                            </Typography>
-                                        </CardContent>
-                                    </Fade>
-                                </Grid>
+                                <Typography className={classes.typographyBody} >
+                                    We are a development and investment company that specializes in redevelopment and
+                                renewable energy. Our related company, Hartman Ely  Architecture provides design services for our developments. <br /><br />
 
+                                    In addition, we have extensive experience with transit oriented and environmentally
+                                    responsible, sustainable development. A major force behind all our work is a passion
+                                to help mitigate global climate change and to help communities become more energy independent<br /><br />
 
+                                    A key part of our business philosophy is strategic partnerships with other firms to
+                                    form a uniquely qualified team for each development opportunity. This partnership
+                                    pproach allows Jim and Susan’s extensive involvement in each development, better
+                                    quality and lower cost services than most other development. Some examples of our
+                                    partners include City Street Investors, Larimer Associates, Heitler Development,
+                                Harvard Communities, City of Wheat Ridge and Jefferson County.<br /><br />
 
+                                    Additionally, our extensive experience and skill with conceptual design, budgeting
+                                    and scheduling is a tremendous asset in the early stages of any development. We can
+                                    quickly analyze several options and create designs, budgets and schedules for any site
+                                    or program that allows a landowner or entity to select the best option with minimal
+                                    cost in the early due diligence or RFP phase.
+                                </Typography>
                             </Grid>
                         </Container>
 
 
 
-                 
+                        <Fade bottom delay={1300}>
+                            <div className={classes.heroButtons}>
+                                <Grid container spacing={2} justify="center">
+                                    <Grid item>
+                                        <MyButton
+                                            text="Locations"
+                                            bck="#ffa800"
+                                            color="white" />
+                                    </Grid>
+                                    <Grid item>
+                                        <MyButton
+                                            text="Purchase"
+                                            bck="#ffa800"
+                                            color="white" />
+                                    </Grid>
+                                </Grid>
+                            </div>
+                        </Fade>
                     </Container>
                 </div>
 

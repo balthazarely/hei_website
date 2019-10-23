@@ -25,9 +25,6 @@ import SteamPlant from '../../../resources/imgs/Steamplant.jpg'
 import Eiber from '../../../resources//imgs/eiber_village.jpg'
 
 
-
-
-
 const useStyles = makeStyles(theme => ({
     icon: {
         marginRight: theme.spacing(2),
@@ -50,6 +47,7 @@ const useStyles = makeStyles(theme => ({
     },
     cardMedia: {
         paddingTop: '56.25%', // 16:9
+        display: "block",
     },
     cardContent: {
         flexGrow: 1,
@@ -68,7 +66,6 @@ const useStyles = makeStyles(theme => ({
     footer: {
         backgroundColor: theme.palette.background.paper,
         padding: theme.spacing(6),
-
     },
 }));
 
@@ -90,22 +87,36 @@ export default function Projects() {
                         </Typography>
 
 
+
+
                         <Container className={classes.cardGrid} maxWidth="md">
                             <Grid container spacing={4}>
 
 
                                 <Grid item xs={12} sm={4} md={4}>
-                                    <Fade bottom delay={300}>
-                                        <CardMedia
-                                            className={classes.cardMedia}
-                                            image={Fruitdale}
-                                            title="Image title"
-                                        />
+                                    <Fade bottom delay={200}>
+                                        <Link style={{
+                                            textDecoration: "none",
+                                            color: "black"
+                                        }}
+                                            to="/fruitdale">
+                                            <div className="container">
+                                                <CardMedia
+                                                    className="image"
+                                                    image={Fruitdale}
+                                                    title="Image title"
+                                                />
+                                                <div className="overlay">
+
+                                                </div>
+                                            </div>
+                                        </Link>
                                         <CardContent>
                                             <Typography className={classes.typographyHeader} gutterBottom>
                                                 <Link style={{
                                                     textDecoration: "none",
-                                                    color: "black"
+                                                    color: "black",
+
                                                 }}
                                                     to="/fruitdale">Fruitdale School Lofts</Link>
                                             </Typography>
@@ -115,13 +126,18 @@ export default function Projects() {
                                         </CardContent>
                                     </Fade>
                                 </Grid>
+
                                 <Grid item xs={12} sm={4} md={4}>
-                                    <Fade bottom delay={300}>
-                                        <CardMedia
-                                            className={classes.cardMedia}
-                                            image={Pancratia}
-                                            title="Image title"
-                                        />
+                                    <Fade bottom delay={200}>
+                                        <div className="container">
+                                            <CardMedia
+                                                className="image"
+                                                image={Pancratia}
+                                                title="Image title"
+                                            />
+                                            <div className="overlay">
+                                            </div>
+                                        </div>
                                         <CardContent>
                                             <Typography className={classes.typographyHeader} gutterBottom>
                                                 <Link style={{
@@ -136,13 +152,18 @@ export default function Projects() {
                                         </CardContent>
                                     </Fade>
                                 </Grid>
+
                                 <Grid item xs={12} sm={4} md={4}>
-                                    <Fade bottom delay={300}>
-                                        <CardMedia
-                                            className={classes.cardMedia}
-                                            image={Eiber}
-                                            title="Image title"
-                                        />
+                                    <Fade bottom delay={200}>
+                                        <div className="container">
+                                            <CardMedia
+                                                className="image"
+                                                image={Eiber}
+                                                title="Image title"
+                                            />
+                                            <div className="overlay">
+                                            </div>
+                                        </div>
                                         <CardContent>
                                             <Typography className={classes.typographyHeader} gutterBottom>
                                                 <Link style={{
@@ -160,11 +181,15 @@ export default function Projects() {
 
                                 <Grid item xs={12} sm={4} md={4}>
                                     <Fade bottom delay={300}>
-                                        <CardMedia
-                                            className={classes.cardMedia}
-                                            image={Hanger2}
-                                            title="Image title"
-                                        />
+                                        <div className="container">
+                                            <CardMedia
+                                                className="image"
+                                                image={Hanger2}
+                                                title="Image title"
+                                            />
+                                            <div className="overlay">
+                                            </div>
+                                        </div>
                                         <CardContent>
                                             <Typography className={classes.typographyHeader} gutterBottom>
                                                 <Link style={{
@@ -179,13 +204,18 @@ export default function Projects() {
                                         </CardContent>
                                     </Fade>
                                 </Grid>
+
                                 <Grid item xs={12} sm={4} md={4}>
                                     <Fade bottom delay={300}>
-                                        <CardMedia
-                                            className={classes.cardMedia}
-                                            image={SteamPlant}
-                                            title="Image title"
-                                        />
+                                        <div className="container">
+                                            <CardMedia
+                                                className="image"
+                                                image={SteamPlant}
+                                                title="Image title"
+                                            />
+                                            <div className="overlay">
+                                            </div>
+                                        </div>
                                         <CardContent>
                                             <Typography className={classes.typographyHeader} gutterBottom>
                                                 <Link style={{
@@ -200,13 +230,18 @@ export default function Projects() {
                                         </CardContent>
                                     </Fade>
                                 </Grid>
+
                                 <Grid item xs={12} sm={4} md={4}>
                                     <Fade bottom delay={300}>
-                                        <CardMedia
-                                            className={classes.cardMedia}
-                                            image={SteamPlantRow}
-                                            title="Image title"
-                                        />
+                                        <div className="container">
+                                            <CardMedia
+                                                className="image"
+                                                image={SteamPlantRow}
+                                                title="Image title"
+                                            />
+                                            <div className="overlay">
+                                            </div>
+                                        </div>
                                         <CardContent>
                                             <Typography className={classes.typographyHeader} gutterBottom>
                                                 <Link style={{
