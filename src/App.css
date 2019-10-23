@@ -318,7 +318,6 @@ header .header_logo_venue {
 
 .container:hover .image, .overlay{
   transform: scale(1.05);
-  box-shadow: inset 0 0 0 5px #ffa800;
 }
 
 .arrow-icon {

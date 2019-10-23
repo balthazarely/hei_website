@@ -4,6 +4,7 @@ import './App.css';
 import Featured from './components/Home/featured';
 import Highlights from './components/Home/highlights';
 import Next from './components/Home/next'
+import MapContainer from './components/Home/map/'
 import Team from './components/Home/team'
 import Projects from './components/Home/projects'
 import Contact from './components/Home/contact'
@@ -34,6 +35,8 @@ function Routes() {
         <Featured />
       </Element>
 
+
+
       <Element name="mission">
         <Next />
       </Element>
@@ -44,6 +47,10 @@ function Routes() {
 
       <Element name="portfolio">
         <Projects />
+      </Element>
+
+      <Element name="">
+        <MapContainer />
       </Element>
 
       <Element name="contact">
