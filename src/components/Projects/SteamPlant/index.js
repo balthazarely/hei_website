@@ -1,15 +1,12 @@
 import React from 'react';
 import Fade from "react-reveal/Fade";
-
-
 import MyButton from '../../UI/MyButton'
-
 import HeroImage from './HeroImage'
 import NukaCarousel from './NukaCarousel'
-
 import {
     Grid, Container, CardContent, Typography
 } from '@material-ui/core';
+import Iframe from 'react-iframe'
 import { makeStyles } from '@material-ui/core/styles';
 
 
@@ -74,11 +71,11 @@ const Projects = () => {
             <Container className={classes.cardGrid} maxWidth="md">
                 <Grid container className="single-portfolio-container" spacing={2}>
                     <Grid item xs={12} sm={8} md={8}>
-                        <Typography component="h2" variant="h3" align="left" color="textPrimary" gutterBottom>
-                            The Historic Fruitdale Lofts
+                        <Typography component="h2" variant="h4" align="left" color="textPrimary" gutterBottom>
+                            Transformation of original Lowry Steam Plant
                         </Typography>
-                        <Typography component="h2" variant="h45" align="left" color="textSecondary" gutterBottom>
-                            Wheatridge | Colorado | Historic
+                        <Typography component="h3" variant="h45" align="left" color="textSecondary" gutterBottom>
+                            Denver, Colorado
                         </Typography>
                     </Grid>
 
@@ -86,20 +83,22 @@ const Projects = () => {
                         <Typography variant="p" align="left" color="textSecondary" paragraph style={{
                             paddingRight: "30px"
                         }}>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore atque ducimus nemo ullam,
-                             eum distinctio quos saepe totam facere obcaecati, corrupti, nihil itaque earum?
-                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore atque ducimus nemo ullam,
-                             eum distinctio quos saepe totam facere obcaecati, corrupti, nihil itaque earum? <br />
+                            Steam Plant Lofts is the creative conversion of the original "Power House" of the
+                             Lowry Air Force Base into 14 custom-designed loft-style condominiums. The overall
+                             development also includes 9 single-family  Patio Homes that complement the historic
+                             Steam Plant building. Steam Plant Lofts has six individual loft solar power systems
+                             restoring the building's historic function as Lowry's Source of Energy.
                             <br />
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore atque ducimus nemo ullam,
-                            eum distinctio quos saepe totam facere obcaecati, corrupti, nihil itaque earum?
-                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <br />
+                            Hartman Ely Investments was Development Manager and was an ownership partner
+                             with Harvard Communities.
                         </Typography>
+
                         <div style={{
                             textAlign: "left"
                         }}>
                             <MyButton
-                                text="Visit Website"
+                                text="Website"
                                 bck="#ffa800"
                                 color="white" />
                         </div>
@@ -115,17 +114,7 @@ const Projects = () => {
                                     <ul>
                                         <li>
                                             <Typography className={classes.typographpylist} component="p" variant="p" align="left" color="textSecondary" gutterBottom>
-                                                2018 Community Development award: National Association of Housing and Redevelopment Officials
-                                                </Typography>
-                                        </li>
-                                        <li>
-                                            <Typography className={classes.typographpylist} component="p" variant="p" align="left" color="textSecondary" gutterBottom>
-                                                2018 Residential Development that Overcame Significant Obstacles award: Novogradac & Company
-                                                </Typography>
-                                        </li>
-                                        <li>
-                                            <Typography className={classes.typographpylist} component="p" variant="p" align="left" color="textSecondary" gutterBottom>
-                                                2018 Reinvestment Award & Special Congressional Recognition: City of Wheat Ridge and US Congressman Ed Perlmutter
+                                                The Mayor's Design Award in 2009 in the category "Buildings that Beckon”
                                                 </Typography>
                                         </li>
                                     </ul>
@@ -134,12 +123,18 @@ const Projects = () => {
                             </div>
                         </Fade>
                     </Grid>
+
+
+
+
                     <Grid
                         item xs={12} sm={12} md={12} style={{
                             marginTop: "40px"
                         }}>
                         <NukaCarousel />
                     </Grid>
+
+
                 </Grid>
             </Container >
         </div >

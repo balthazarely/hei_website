@@ -65,7 +65,7 @@ const Text = () => {
                         letterSpacing: "2px",
                         textShadow: "2px 2px 3px rgba(0,0,0,0.58)"
 
-                    }}>Fruitdale Lofts</div>
+                    }}>Pancratia Hall Lofts</div>
                 </Typography>
             </Fade>
             <Fade bottom delay={900} >

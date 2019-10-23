@@ -120,7 +120,7 @@ export default function Projects() {
                                                     to="/fruitdale">Fruitdale School Lofts</Link>
                                             </Typography>
                                             <Typography className={classes.typographyBody} gutterBottom>
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
+                                                HEI and the City of Wheat Ridge created a unique residential community of 16 affordable rental apartments.
                                         </Typography>
                                             {/* <MyButtonSmall
                                                 text="Website"
@@ -132,15 +132,21 @@ export default function Projects() {
 
                                 <Grid item xs={12} sm={4} md={4}>
                                     <Fade bottom delay={200}>
-                                        <div className="container">
-                                            <CardMedia
-                                                className="image"
-                                                image={Pancratia}
-                                                title="Image title"
-                                            />
-                                            <div className="overlay">
+                                        <Link style={{
+                                            textDecoration: "none",
+                                            color: "black"
+                                        }}
+                                            to="/pancratia">
+                                            <div className="container">
+                                                <CardMedia
+                                                    className="image"
+                                                    image={Pancratia}
+                                                    title="Image title"
+                                                />
+                                                <div className="overlay">
+                                                </div>
                                             </div>
-                                        </div>
+                                        </Link>
                                         <CardContent>
                                             <Typography
                                                 style={{
@@ -154,10 +160,11 @@ export default function Projects() {
                                                     textDecoration: "none",
                                                     color: "black"
                                                 }}
-                                                    to="/projectone">Pancratia Hall Lofts</Link>
+                                                    to="/pancratia">Pancratia Hall Lofts</Link>
                                             </Typography>
                                             <Typography className={classes.typographyBody} gutterBottom>
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
+                                                Pancratia Hall Lofts is an adaptive use conversion of a vacant classroom
+                                                and dormitory building in southwest Denver.
                                         </Typography>
                                         </CardContent>
                                     </Fade>
@@ -165,15 +172,21 @@ export default function Projects() {
 
                                 <Grid item xs={12} sm={4} md={4}>
                                     <Fade bottom delay={200}>
-                                        <div className="container">
-                                            <CardMedia
-                                                className="image"
-                                                image={Eiber}
-                                                title="Image title"
-                                            />
-                                            <div className="overlay">
+                                        <Link style={{
+                                            textDecoration: "none",
+                                            color: "black"
+                                        }}
+                                            to="/eiber">
+                                            <div className="container">
+                                                <CardMedia
+                                                    className="image"
+                                                    image={Eiber}
+                                                    title="Image title"
+                                                />
+                                                <div className="overlay">
+                                                </div>
                                             </div>
-                                        </div>
+                                        </Link>
                                         <CardContent>
                                             <Typography
                                                 style={{
@@ -187,10 +200,11 @@ export default function Projects() {
                                                     textDecoration: "none",
                                                     color: "black"
                                                 }}
-                                                    to="/projectone"> Eiber Village</Link>
+                                                    to="/eiber"> Eiber Village</Link>
                                             </Typography>
                                             <Typography className={classes.typographyBody} gutterBottom>
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
+                                                Eiber Village is an adaptive use conversion of three
+                                                abandoned buildings to 50 affordable rental senior apartments.
                                         </Typography>
                                         </CardContent>
                                     </Fade>
@@ -198,15 +212,21 @@ export default function Projects() {
 
                                 <Grid item xs={12} sm={4} md={4}>
                                     <Fade bottom delay={300}>
-                                        <div className="container">
-                                            <CardMedia
-                                                className="image"
-                                                image={Hanger2}
-                                                title="Image title"
-                                            />
-                                            <div className="overlay">
+                                        <Link style={{
+                                            textDecoration: "none",
+                                            color: "black"
+                                        }}
+                                            to="/hanger2">
+                                            <div className="container">
+                                                <CardMedia
+                                                    className="image"
+                                                    image={Hanger2}
+                                                    title="Image title"
+                                                />
+                                                <div className="overlay">
+                                                </div>
                                             </div>
-                                        </div>
+                                        </Link>
                                         <CardContent>
                                             <Typography
                                                 style={{
@@ -220,10 +240,10 @@ export default function Projects() {
                                                     textDecoration: "none",
                                                     color: "black"
                                                 }}
-                                                    to="/projectone">  Hangar 2 Lowry  </Link>
+                                                    to="/hanger2">  Hangar 2 Lowry  </Link>
                                             </Typography>
                                             <Typography className={classes.typographyBody} gutterBottom>
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
+                                                The transformation of the historic 1939 Hangar 2 at Lowry into a vibrant neighborhood meeting place.
                                         </Typography>
                                         </CardContent>
                                     </Fade>
@@ -231,15 +251,21 @@ export default function Projects() {
 
                                 <Grid item xs={12} sm={4} md={4}>
                                     <Fade bottom delay={300}>
-                                        <div className="container">
-                                            <CardMedia
-                                                className="image"
-                                                image={SteamPlant}
-                                                title="Image title"
-                                            />
-                                            <div className="overlay">
+                                        <Link style={{
+                                            textDecoration: "none",
+                                            color: "black"
+                                        }}
+                                            to="/steamplant">
+                                            <div className="container">
+                                                <CardMedia
+                                                    className="image"
+                                                    image={SteamPlant}
+                                                    title="Image title"
+                                                />
+                                                <div className="overlay">
+                                                </div>
                                             </div>
-                                        </div>
+                                        </Link>
                                         <CardContent>
                                             <Typography
                                                 style={{
@@ -253,10 +279,11 @@ export default function Projects() {
                                                     textDecoration: "none",
                                                     color: "black"
                                                 }}
-                                                    to="/projectone">Steam Plant Lofts  </Link>
+                                                    to="/steamplant">Steam Plant Lofts  </Link>
                                             </Typography>
                                             <Typography className={classes.typographyBody} gutterBottom>
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
+                                                The  original "Power House" of
+                                                the Lowry Air Force Base, redeveloped into 14 custom-designed loft-style condominiums.
                                         </Typography>
                                         </CardContent>
                                     </Fade>
@@ -264,15 +291,21 @@ export default function Projects() {
 
                                 <Grid item xs={12} sm={4} md={4}>
                                     <Fade bottom delay={300}>
-                                        <div className="container">
-                                            <CardMedia
-                                                className="image"
-                                                image={SteamPlantRow}
-                                                title="Image title"
-                                            />
-                                            <div className="overlay">
+                                        <Link style={{
+                                            textDecoration: "none",
+                                            color: "black"
+                                        }}
+                                            to="/steamplantrowhomes">
+                                            <div className="container">
+                                                <CardMedia
+                                                    className="image"
+                                                    image={SteamPlantRow}
+                                                    title="Image title"
+                                                />
+                                                <div className="overlay">
+                                                </div>
                                             </div>
-                                        </div>
+                                        </Link>
                                         <CardContent>
                                             <Typography
                                                 style={{
@@ -286,10 +319,10 @@ export default function Projects() {
                                                     textDecoration: "none",
                                                     color: "black"
                                                 }}
-                                                    to="/projectone"> Steam Plant Row Home</Link>
+                                                    to="/steamplantrowhomes"> Steam Plant Row Home</Link>
                                             </Typography>
                                             <Typography className={classes.typographyBody} gutterBottom>
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque accusantium fugit modi omnis, eaque corrupti.
+                                                Steam Plant Row Homes is a 10-unit townhome building that is the first live/work facility at Lowry.
                                         </Typography>
                                         </CardContent>
                                     </Fade>

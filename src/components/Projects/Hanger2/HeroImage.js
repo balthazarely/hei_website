@@ -2,7 +2,7 @@ import React from 'react';
 import Text from './Text';
 
 import LazyHero from 'react-lazy-hero';
-import Fruitdale from '../../../resources/imgs/fruitdale.jpg'
+import Hanger2 from '../../../resources/imgs/hanger2.1.jpg'
 
 const HeroImage = () => {
     return (
@@ -17,7 +17,7 @@ const HeroImage = () => {
                 parallaxOffset="100"
                 transitionDuration="600"
                 transitionTimingFunction="ease-in-out"
-                imageSrc={Fruitdale}>
+                imageSrc={Hanger2}>
                 <div style={{
                     position: "relative",
                     top: "50px"

@@ -106,7 +106,7 @@ export default function Album() {
 
 
 
-                        <Fade bottom delay={1300}>
+                        {/* <Fade bottom delay={1300}>
                             <div className={classes.heroButtons}>
                                 <Grid container spacing={2} justify="center">
                                     <Grid item>
@@ -123,7 +123,7 @@ export default function Album() {
                                     </Grid>
                                 </Grid>
                             </div>
-                        </Fade>
+                        </Fade> */}
                     </Container>
                 </div>
 

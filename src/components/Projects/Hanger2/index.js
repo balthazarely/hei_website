@@ -1,15 +1,12 @@
 import React from 'react';
 import Fade from "react-reveal/Fade";
-
-
 import MyButton from '../../UI/MyButton'
-
 import HeroImage from './HeroImage'
 import NukaCarousel from './NukaCarousel'
-
 import {
     Grid, Container, CardContent, Typography
 } from '@material-ui/core';
+import Iframe from 'react-iframe'
 import { makeStyles } from '@material-ui/core/styles';
 
 
@@ -74,11 +71,11 @@ const Projects = () => {
             <Container className={classes.cardGrid} maxWidth="md">
                 <Grid container className="single-portfolio-container" spacing={2}>
                     <Grid item xs={12} sm={8} md={8}>
-                        <Typography component="h2" variant="h3" align="left" color="textPrimary" gutterBottom>
-                            The Historic Fruitdale Lofts
+                        <Typography component="h2" variant="h4" align="left" color="textPrimary" gutterBottom>
+                            Vibrant Redevelopment of Historic Hangar
                         </Typography>
-                        <Typography component="h2" variant="h45" align="left" color="textSecondary" gutterBottom>
-                            Wheatridge | Colorado | Historic
+                        <Typography component="h3" variant="h45" align="left" color="textSecondary" gutterBottom>
+                            Denver, Colorado
                         </Typography>
                     </Grid>
 
@@ -86,20 +83,26 @@ const Projects = () => {
                         <Typography variant="p" align="left" color="textSecondary" paragraph style={{
                             paddingRight: "30px"
                         }}>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore atque ducimus nemo ullam,
-                             eum distinctio quos saepe totam facere obcaecati, corrupti, nihil itaque earum?
-                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore atque ducimus nemo ullam,
-                             eum distinctio quos saepe totam facere obcaecati, corrupti, nihil itaque earum? <br />
+                            The transformation of the historic 1939 Hangar 2 at Lowry into a vibrant neighborhood meeting
+                            place includes restaurants, public art, small entrepreneurial office and retail suites
+                            as well as Montessri Casa International School. The hangar interior provides climate
+                            controlled storage space for Lowry’s homes and local businesses. The entire property
+                            creates a pedestrian-friendly streetscape and outdoor dining areas connecting the
+                            massive historic hangar with the surrounding community. The renovated hangar has a
+                            105kW solar power system for the building and an energy efficient design. It also
+                            incorporates a 400kW community solar array allowing solar panels to be purchased by Denver
+                            residents to offset their power needs.
                             <br />
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore atque ducimus nemo ullam,
-                            eum distinctio quos saepe totam facere obcaecati, corrupti, nihil itaque earum?
-                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <br />
+                            Hartman Ely Investments was Development Manager and is an ownership partner with Larimer
+                            Associates and City Street Investors.
                         </Typography>
+
                         <div style={{
                             textAlign: "left"
                         }}>
                             <MyButton
-                                text="Visit Website"
+                                text="Website"
                                 bck="#ffa800"
                                 color="white" />
                         </div>
@@ -115,17 +118,17 @@ const Projects = () => {
                                     <ul>
                                         <li>
                                             <Typography className={classes.typographpylist} component="p" variant="p" align="left" color="textSecondary" gutterBottom>
-                                                2018 Community Development award: National Association of Housing and Redevelopment Officials
+                                                2015 Colorado Innovation Award: Urban Land Institute
+                                             </Typography>
+                                        </li>
+                                        <li>
+                                            <Typography className={classes.typographpylist} component="p" variant="p" align="left" color="textSecondary" gutterBottom>
+                                                2013 Community Preservation Award: Historic Denver.
                                                 </Typography>
                                         </li>
                                         <li>
                                             <Typography className={classes.typographpylist} component="p" variant="p" align="left" color="textSecondary" gutterBottom>
-                                                2018 Residential Development that Overcame Significant Obstacles award: Novogradac & Company
-                                                </Typography>
-                                        </li>
-                                        <li>
-                                            <Typography className={classes.typographpylist} component="p" variant="p" align="left" color="textSecondary" gutterBottom>
-                                                2018 Reinvestment Award & Special Congressional Recognition: City of Wheat Ridge and US Congressman Ed Perlmutter
+                                                2011 Mayor's Design Award.
                                                 </Typography>
                                         </li>
                                     </ul>
@@ -134,12 +137,29 @@ const Projects = () => {
                             </div>
                         </Fade>
                     </Grid>
+
+
+
+
                     <Grid
                         item xs={12} sm={12} md={12} style={{
                             marginTop: "40px"
                         }}>
                         <NukaCarousel />
                     </Grid>
+
+                    <Grid
+                        item xs={12} sm={12} md={12}>
+                        <Iframe url="https://www.youtube.com/embed/WwQ_NHuocP0"
+                            className="video-box"
+                            width="450px"
+                            height="300px"
+                            id="myId"
+                            display="initial"
+                            position="relative" />
+                    </Grid>
+
+
                 </Grid>
             </Container >
         </div >

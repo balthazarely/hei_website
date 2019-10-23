@@ -1,7 +1,6 @@
 import Carousel from "nuka-carousel"
-import Fruit1 from '../../../resources/imgs/fruitdale.jpg'
-import Fruit2 from '../../../resources/imgs/fruitdale2.jpg'
-import Fruit3 from '../../../resources/imgs/fruitedale1.jpg'
+import Fruit1 from '../../../resources/imgs/eiber_village.jpg'
+
 import React, { Component } from 'react'
 
 
@@ -16,14 +15,7 @@ export default class NukaCarousel extends Component {
                         backgroundImage: `url(${Fruit1})`,
                     }}>
                     </div>
-                    <div className="imageBox" style={{
-                        backgroundImage: `url(${Fruit2})`,
-                    }}>
-                    </div>
-                    <div className="imageBox" style={{
-                        backgroundImage: `url(${Fruit3})`,
-                    }}>
-                    </div>
+
                 </Carousel>
             </div>
         )

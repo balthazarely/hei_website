@@ -89,10 +89,11 @@ export default function OurTeam() {
                                                 Jim Hartman
                                         </Typography>
                                             <Typography className={classes.typographyBody} >
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
-                                                voluptatum earum ratione ab qui! Nemo accusantium ipsam maiore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
-                                                voluptatum earum ratione ab qui! Nemo accusantium ipsam maiore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
-                                                voluptatum earum ratione ab qui! Nemo accusantium ipsam maiore!
+                                                Jim is one of Colorado’s leading experts with historic building redevelopment,
+                                                urban infill development and renewable energy. He received his architectural
+                                                degree from University of Virginia in 1980 and practiced in Colorado for many
+                                                years. His passion is creating sustainable communities that respect their
+                                                historical roots and enhance their neighborhoods.
                                  </Typography>
                                         </CardContent>
                                     </Grid>
@@ -102,10 +103,10 @@ export default function OurTeam() {
                                                 Susan Ely
                                         </Typography>
                                             <Typography className={classes.typographyBody} >
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
-                                                    voluptatum earum ratione ab qui! Nemo accusantium ipsam maiore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
-                                                    voluptatum earum ratione ab qui! Nemo accusantium ipsam maiore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, rerum
-                                                    voluptatum earum ratione ab qui! Nemo accusantium ipsam maiore!
+                                                Susan Ely grew up in Australia and moved to Colorado in 1993.
+                                                She received her architectural degree in 1986 from the University of
+                                                Melbourne, Australia and practiced in Australia for several years.
+                                                Susan is HEI's Business Manager and is in charge of all administrative efforts of the company.
                                         </Typography>
                                         </CardContent>
                                     </Grid>

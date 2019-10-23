@@ -6,6 +6,7 @@ import NukaCarousel from './NukaCarousel'
 import {
     Grid, Container, CardContent, Typography
 } from '@material-ui/core';
+import Iframe from 'react-iframe'
 import { makeStyles } from '@material-ui/core/styles';
 
 
@@ -70,75 +71,74 @@ const Projects = () => {
             <Container className={classes.cardGrid} maxWidth="md">
                 <Grid container className="single-portfolio-container" spacing={2}>
                     <Grid item xs={12} sm={8} md={8}>
-                        <Typography component="h2" variant="h3" align="left" color="textPrimary" gutterBottom>
-                            Adaptive Use of National Register Historic Building
+                        <Typography component="h2" variant="h4" align="left" color="textPrimary" gutterBottom>
+                            Affordable Senior Housing on Light Rail - coming in 2020
                         </Typography>
-                        <Typography component="h2" variant="h45" align="left" color="textSecondary" gutterBottom>
-                            Wheat Ridge, Colorado
+                        <Typography component="h3" variant="h45" align="left" color="textSecondary" gutterBottom>
+                            Lakewood, Colorado
                         </Typography>
                     </Grid>
 
-                    <Grid item xs={12} sm={8} md={8}>
+                    <Grid item xs={12} sm={12} md={12}>
                         <Typography variant="p" align="left" color="textSecondary" paragraph style={{
                             paddingRight: "30px"
                         }}>
-                            A public/private partnership between Fruitdale School Partners, The City of Wheat Ridge
-                            and The Wheat Ridge Housing Authority created a unique residential community of 16 affordable
-                            rental apartments. Historic interior features such as huge operable windows, high ceilings,
-                             chalk boards and basketball hoops from the prior school are featured.<br />
+                            Eiber Village is an adaptive use conversion of three vacant, abandoned buildings to 50 affordable
+                            rental senior apartments. The original 1960s buildings originally operated as the Hospice of Saint
+                            John and this important property was recently designated by the City of Lakewood as a local historic
+                            site. The property’s adjacency to Garrison Station along RTD’s West light rail line and it’s proximity
+                            to West Colfax Avenue will provide great transit and shopping opportunities for residents. Fruit orchards,
+                            enhanced existing gardens, resident patios and solar power systems will be created on the balance of the site.<br />
                             <br />
-                            The entire property is solar-powered and has numerous energy efficiency features to minimize
-                            operational costs as well as to provide community education on sustainable development.
-                            The site includes a fruit orchard, low-water-use edible landscaping and free electric vehicle charging.
+                            The project will be a public/private partnership with the City of Lakewood, Metro West Housing Solutions
+                            and Jefferson County and is scheduled to be completed in Spring 2020.<br />
+                            <br />
+
+                            Hartman Ely Investments is Development Manager and an ownership partner with Giving Tree Partnerships.
                         </Typography>
-                        <Typography component="h2" variant="h45" align="left" color="textSecondary" gutterBottom>
-                            Media
-                        </Typography>
+
                         <div style={{
                             textAlign: "left"
                         }}>
                             <MyButton
-                                text="Wat"
+                                text="Website"
                                 bck="#ffa800"
                                 color="white" />
                         </div>
                     </Grid>
-                    <Grid item xs={12} sm={4} md={4}>
-                        <Fade right delay={500}>
-                            <div className="list-container">
-                                <div className="text-rule">
-                                    AWARDS
-                            </div>
-                                <div className="list">
+                    {/*  */}
 
-                                    <ul>
-                                        <li>
-                                            <Typography className={classes.typographpylist} component="p" variant="p" align="left" color="textSecondary" gutterBottom>
-                                                2018 Community Development award: National Association of Housing and Redevelopment Officials
-                                                </Typography>
-                                        </li>
-                                        <li>
-                                            <Typography className={classes.typographpylist} component="p" variant="p" align="left" color="textSecondary" gutterBottom>
-                                                2018 Residential Development that Overcame Significant Obstacles award: Novogradac & Company
-                                                </Typography>
-                                        </li>
-                                        <li>
-                                            <Typography className={classes.typographpylist} component="p" variant="p" align="left" color="textSecondary" gutterBottom>
-                                                2018 Reinvestment Award & Special Congressional Recognition: City of Wheat Ridge and US Congressman Ed Perlmutter
-                                                </Typography>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className='text-rule-bottom'></div>
-                            </div>
-                        </Fade>
-                    </Grid>
+
+
+
                     <Grid
                         item xs={12} sm={12} md={12} style={{
                             marginTop: "40px"
                         }}>
                         <NukaCarousel />
                     </Grid>
+
+                    {/* <Grid
+                        item xs={12} sm={12} md={6}>
+                        <Iframe url="https://www.youtube.com/embed/NcsAn8GcbaM"
+                            className="video-box"
+                            width="450px"
+                            height="300px"
+                            id="myId"
+                            display="initial"
+                            position="relative" />
+                    </Grid>
+                    <Grid style={{ position: "relative" }}
+                        item xs={12} sm={12} md={6}>
+                        <Iframe url="https://www.youtube.com/embed/nDiRsbtbM-E"
+                            className="video-box"
+                            width="450px"
+                            height="300px"
+                            id="myId"
+                            display="initial"
+                            position="relative" />
+                    </Grid> */}
+
                 </Grid>
             </Container >
         </div >
